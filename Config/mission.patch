@@ -62,6 +62,7 @@
                     propOperator: EQUAL;
                     isInput: false;
                 }
+                ConditionMode: AND;
             }
         }
         +_1 {
@@ -258,31 +259,31 @@
                             ShowsInHistory: true,
                             DialogEntryType: Text,
                             LocKey: "Missions/Primary/MTES01/Brief01",
-                            ContentAddressableKey: keri_happy,
+                            ContentAddressableKey: keri_neutral,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
                             LocKey: "Missions/Primary/MTES01/Brief02",
-                            ContentAddressableKey: keri_happy,
+                            ContentAddressableKey: keri_neutral,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
                             LocKey: "Missions/Primary/MTES01/Brief03",
-                            ContentAddressableKey: keri_happy,
+                            ContentAddressableKey: keri_neutral,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
                             LocKey: "Missions/Primary/MTES01/Brief04",
-                            ContentAddressableKey: keri_happy,
+                            ContentAddressableKey: keri_neutral,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
                             LocKey: "Missions/Primary/MTES01/Brief05",
-                            ContentAddressableKey: keri_happy,
+                            ContentAddressableKey: keri_neutral,
                         }
                     ];
                 }
@@ -327,6 +328,171 @@
         +OnSubmit {
 			+ActivateMissionAction {
 				TargetMissionID: KSP2Mission_Secondary_Kerbin_OrbitCircular;
+				MissionOwner: Agency;
+			}
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_MTES02_Polar_Probe;
+				MissionOwner: Agency;
+			}
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
+
+@new(MTE_Secondary_MTES02_Polar_Probe)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Primary/MTES02/Name";
+    description: "Missions/Primary/MTES02/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Primary/MTES02/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            * > actions {
+                +MissionDestinationPosition {
+                    celestialBodyName: Kerbin;
+                    cb_Coords: {
+                        x: 0.0,
+                        y: 0.0,
+                        z: 550.0
+                    };
+                }
+            }
+            +ConditionSet {
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Kerbin;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VehicleLatitudePropertyWatcher);
+                    TestWatchedValue: 80.0;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                +EventCondition {
+                    EventTypeAQN: get-message(VesselLandedGroundAtRestMessage);
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 50.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_primary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterKSC;
+    TriumphLoopVideoKey: reward_mission_tier1;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Brief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_neutral;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Primary/MTES02/Brief01",
+                            ContentAddressableKey: keri_happy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Primary/MTES02/Brief02",
+                            ContentAddressableKey: keri_happy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Primary/MTES02/Brief03",
+                            ContentAddressableKey: keri_happy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Primary/MTES02/Brief04",
+                            ContentAddressableKey: keri_happy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Primary/MTES02/Brief05",
+                            ContentAddressableKey: keri_happy,
+                        }
+                    ];
+                }
+            }
+        }
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_happy;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Primary/MTES02/Debrief01",
+                            ContentAddressableKey: keri_joy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Primary/MTES02/Debrief02",
+                            ContentAddressableKey: keri_joy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Primary/MTES02/Debrief03",
+                            ContentAddressableKey: keri_joy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Primary/MTES02/Debrief04",
+                            ContentAddressableKey: keri_joy,
+                        }
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_primary_returned_to_missionControl;
+            }
+        }
+        +OnSubmit {
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_MTES03_Polar_Flag;
 				MissionOwner: Agency;
 			}
         }
