@@ -1,0 +1,38 @@
+Key,Type,Desc,English
+
+Missions/Primary/MTE01/Name,Text,,"Fly by the Mun"
+Missions/Primary/MTE01/Description,Text,,"Time to visit our nearest neighbor, the Mun!"
+Missions/Primary/MTE01/Objective,Text,,"Enter the Mun's SOI."
+
+Missions/Primary/MTE01/Brief01,Text,,"Ah, Director!
+You wouldn't believe the chaos. Absolute, utter chaos. You see, I may have… overindulged in the Macchiato Mk1. It's… invigorating. To say the least. I haven't slept in days! I've been bouncing off the walls, reorganizing the entire <style=""KSC-Mission-Control"">Mission Control</style> filing system by color. It's… a masterpiece."
+Missions/Primary/MTE01/Brief02,Text,,"Anyway, the point is, I need to slow down. Cut back. Maybe try a… decaf? The thought horrifies me, but desperate times call for desperate measures.
+And speaking of desperate measures, it's time for a new challenge!"
+Missions/Primary/MTE01/Brief03,Text,,"You've conquered orbit. Now, it's time to <i>brush shoulders</i> with the <style=""OBJ-Mun"">Mun</style>! Well, not literally. That would be messy.
+<style=""TXT-Objective"">Enter the <style=""OBJ-Mun"">Mun</style>’s SOI (Sphere Of Influence).</style>"
+Missions/Primary/MTE01/Brief04,Text,,"I know, I know. ‘But Dr. Kerman,' you're probably thinking, ‘aiming for an object so high in the sky sounds… difficult.' And you'd be absolutely right. It's going to require precision, patience, and possibly a few more cups of… <i>decaf</i>."
+Missions/Primary/MTE01/Brief05,Text,,"I'll let you in on a little secret. The trick to succeeding in this mission is to wait until you see the <style=""OBJ-Mun"">Mun</style> rise on the horizon, and burn prograde. That way you can't miss it! Be careful not to crash into it, though.
+You can thanks the engineers at <style=""KSC-Mission-Control"">Mission Control</style>, I would never have found this on my own…"
+Missions/Primary/MTE01/Brief06,Text,,"Good luck, Director! And try not to get too distracted by the munar landscape. It's… quite mesmerizing."
+
+
+Missions/Primary/MTE01/Debrief01,Text,,"Greetings, Director! Welcome back!"
+Missions/Primary/MTE01/Debrief02,Text,,"What a view! I practically camped out in the observation deck for your munar flyby. That shimmering rock… it's absolutely breathtaking! You know, seeing the <style=""OBJ-Mun"">Mun</style> so close… it really makes you realize how vast and incredible space truly is."
+Missions/Primary/MTE01/Debrief03,Text,,"Now, it's time to take the next logical step. But for now you can enjoy a well-deserved rest. Why not pay a visit to <style=""KSC-RD-Center"">the R&D Center</style> to discover what new technologies they have come up with? It will give me time to prepare the next brief!"
+
+
+Missions/Primary/MTES01/Name,Text,,"The Ice Spy"
+Missions/Primary/MTES01/Description,Text,,"What does the North Pole look like exactly? Time to find out!"
+Missions/Primary/MTES01/Objective,Text,,"Achieve an orbit around Kerbin with a 90 degree inclinaison."
+
+Missions/Primary/MTES01/Brief01,Text,,"Director, I've been doing some… <i>very</i> important research here at <style=""KSC-Mission-Control"">Mission Control</style>. Specifically, I've been staring at maps of <style=""OBJ-Kerbin"">Kerbin</style>. And I've noticed something… peculiar."
+Missions/Primary/MTES01/Brief02,Text,,"The North Pole."
+Missions/Primary/MTES01/Brief03,Text,,"It's just… there. All snowy and… whity. We know very little about its composition. How big is it? What is it temperature? Is it made of sugar?"
+Missions/Primary/MTES01/Brief04,Text,,"So, I’ve devised a new mission, one that will strengthen our scientific knowledge. You need to fly over the North Pole so that we can have a look at the situation. A <i>polar</i> orbit, you ask? Yes!
+<style="TXT-Objective">Achieve an orbit around <style=""OBJ-Kerbin"">Kerbin</style> with a 90 degree inclinaison.</style>"
+Missions/Primary/MTES01/Brief05,Text,,"Good luck, and don’t do anything… <i>polarizing</i>!"
+
+Missions/Primary/MTES01/Debrief01,Text,,"By my stars, the pictures you sent us confirmed what I suspected all along! The North Pole is a vast expanse of frozen water! Not sugar, as some… <i>less informed</i> individuals might have speculated. Which is fine, I never put sugar in my coffee. It’s a great day for accurate cartography!"
+Missions/Primary/MTES01/Debrief02,Text,,"You’ve proven that you can handle even the most demanding orbital maneuvers, Director. A polar orbit is no small feat!"
+Missions/Primary/MTES01/Debrief03,Text,,"Now, this has given me an idea. These images are just a starting point. We’ve only scratched the surface, so to speak. There’s so much more to learn about the polar regions. The ice thickness, the underlying geology, the atmospheric conditions… it’s a treasure trove of scientific data waiting to be uncovered."
+Missions/Primary/MTES01/Debrief04,Text,,"Come back in a few while I set up a new mission!"
