@@ -358,7 +358,7 @@
                 +MissionDestinationPosition {
                     celestialBodyName: Kerbin;
                     cb_Coords: {
-                        x: 0.0,
+                        x: 90.0,
                         y: 0.0,
                         z: 550.0
                     };
@@ -377,6 +377,13 @@
                     PropertyTypeAQN: get-property-watcher(VehicleLatitudePropertyWatcher);
                     TestWatchedValue: 80.0;
                     propOperator: GREATER;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(CrewCount);
+                    TestWatchedInt: 0;
+                    propOperator: EQUAL;
                     isInput: false;
                 }
                 +EventCondition {
