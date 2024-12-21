@@ -175,8 +175,8 @@
 @new(MTE_Secondary_MTES01_Polar_Orbit)
 :missions {
     MissionGroup: "";
-    name: "Missions/Primary/MTES01/Name";
-    description: "Missions/Primary/MTES01/Description";
+    name: "Missions/Secondary/MTES01/Name";
+    description: "Missions/Secondary/MTES01/Description";
     GameModeFeatureId: ExplorationMissions;
     type: Secondary;
     Owner: Agency;
@@ -185,7 +185,7 @@
         +_0 {
             name: Check;
             description: "";
-            Objective: "Missions/Primary/MTES01/Objective";
+            Objective: "Missions/Secondary/MTES01/Objective";
             MissionRewardType: None;
             DisplayObjective: true;
             +ConditionSet {
@@ -256,31 +256,31 @@
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES01/Brief01",
+                            LocKey: "Missions/Secondary/MTES01/Brief01",
                             ContentAddressableKey: keri_neutral,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES01/Brief02",
+                            LocKey: "Missions/Secondary/MTES01/Brief02",
                             ContentAddressableKey: keri_neutral,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES01/Brief03",
+                            LocKey: "Missions/Secondary/MTES01/Brief03",
                             ContentAddressableKey: keri_neutral,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES01/Brief04",
+                            LocKey: "Missions/Secondary/MTES01/Brief04",
                             ContentAddressableKey: keri_neutral,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES01/Brief05",
+                            LocKey: "Missions/Secondary/MTES01/Brief05",
                             ContentAddressableKey: keri_neutral,
                         }
                     ];
@@ -296,25 +296,25 @@
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES01/Debrief01",
+                            LocKey: "Missions/Secondary/MTES01/Debrief01",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES01/Debrief02",
+                            LocKey: "Missions/Secondary/MTES01/Debrief02",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES01/Debrief03",
+                            LocKey: "Missions/Secondary/MTES01/Debrief03",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES01/Debrief04",
+                            LocKey: "Missions/Secondary/MTES01/Debrief04",
                             ContentAddressableKey: keri_joy,
                         }
                     ];
@@ -341,8 +341,8 @@
 @new(MTE_Secondary_MTES02_Polar_Probe)
 :missions {
     MissionGroup: "";
-    name: "Missions/Primary/MTES02/Name";
-    description: "Missions/Primary/MTES02/Description";
+    name: "Missions/Secondary/MTES02/Name";
+    description: "Missions/Secondary/MTES02/Description";
     GameModeFeatureId: ExplorationMissions;
     type: Secondary;
     Owner: Agency;
@@ -351,7 +351,7 @@
         +_0 {
             name: Check;
             description: "";
-            Objective: "Missions/Primary/MTES02/Objective";
+            Objective: "Missions/Secondary/MTES02/Objective";
             MissionRewardType: None;
             DisplayObjective: true;
             * > actions {
@@ -428,31 +428,31 @@
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES02/Brief01",
+                            LocKey: "Missions/Secondary/MTES02/Brief01",
                             ContentAddressableKey: keri_happy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES02/Brief02",
+                            LocKey: "Missions/Secondary/MTES02/Brief02",
                             ContentAddressableKey: keri_happy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES02/Brief03",
+                            LocKey: "Missions/Secondary/MTES02/Brief03",
                             ContentAddressableKey: keri_happy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES02/Brief04",
+                            LocKey: "Missions/Secondary/MTES02/Brief04",
                             ContentAddressableKey: keri_happy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES02/Brief05",
+                            LocKey: "Missions/Secondary/MTES02/Brief05",
                             ContentAddressableKey: keri_happy,
                         }
                     ];
@@ -468,25 +468,25 @@
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES02/Debrief01",
+                            LocKey: "Missions/Secondary/MTES02/Debrief01",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES02/Debrief02",
+                            LocKey: "Missions/Secondary/MTES02/Debrief02",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES02/Debrief03",
+                            LocKey: "Missions/Secondary/MTES02/Debrief03",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Primary/MTES02/Debrief04",
+                            LocKey: "Missions/Secondary/MTES02/Debrief04",
                             ContentAddressableKey: keri_joy,
                         }
                     ];
