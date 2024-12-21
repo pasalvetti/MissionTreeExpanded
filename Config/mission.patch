@@ -19,8 +19,6 @@
 	}
 
     #Main_MunOrBust_04 {
-// change description as the previous one now belongs to MTE_Main_Mun_Flyby
-        description: "Missions/Primary/PM04/DescriptionAlt";
 // remove KSP2Mission_Secondary_Kerbin_OrbitCircular as it now spawns from MTE_Secondary_MTES01_Polar_Orbit
         * > ContentBranches > OnSubmit > ActivateMissionAction {
 			@if $$TargetMissionID == KSP2Mission_Secondary_Kerbin_OrbitCircular {
