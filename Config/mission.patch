@@ -371,16 +371,6 @@
             Objective: "Missions/Secondary/MTES02/Objective";
             MissionRewardType: None;
             DisplayObjective: true;
-            * > actions {
-                +MissionDestinationPosition {
-                    celestialBodyName: Kerbin;
-                    cb_Coords: {
-                        x: 90.0,
-                        y: 0.0,
-                        z: 550.0
-                    };
-                }
-            }
             +ConditionSet {
                 +PropertyCondition {
                     RequireCurrentValue: true;
