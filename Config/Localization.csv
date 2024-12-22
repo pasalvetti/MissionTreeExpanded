@@ -67,3 +67,24 @@ Missions/Secondary/MTES02/Debrief03,Text,,"I'm pleased to announce that Dunmar's
 Missions/Secondary/MTES02/Debrief04,Text,,"Well done! Now, if you’ll excuse me, I need to go find Dunmar before he starts building ice sculptures of himself."
 
 
+
+
+
+Missions/Secondary/MTES03/Name,Text,,"Operation Cold Feet"
+Missions/Secondary/MTES03/Description,Text,,"The icy steppes of the North Pole have never seen a Kerbal. It’s time to fix this."
+Missions/Secondary/MTES03/Objective,Text,,"Plant a flag at the geographical North Pole of Kerbin."
+
+Missions/Secondary/MTES03/Brief01,Text,,"Director, I’m worrying about Dunmar. He hasn't stopped talking about polar exploration since we send that probe. I think he’s even started referring to himself as 'Lord of the Ice.' We might need to have a word with him about that."
+Missions/Secondary/MTES03/Brief02,Text,,"Anyway, on to the next big step: a Kerbal presence at the North Pole! And Dunmar, ever the visionary, has a grand idea. He believes that planting a flag at the precise geographical North Pole would be a powerful symbol of our agency's achievements. He says it would inspire the Kerbal public, boost our visibility, and, most importantly, make it much easier to secure funding for future projects.
+
+<style="TXT-Objective">Your mission is to plant a flag at the precise geographical North Pole of <style=""OBJ-Kerbin"">Kerbin</style>.</style>"
+Missions/Secondary/MTES03/Brief03,Text,,"We have to be precise in our flag-planting business, as Dunmar has already planned a live broadcast of the event, and he insists on having it shown on every screen on <style=""OBJ-Kerbin"">Kerbin</style>. No pressure! In order to help you, a marker will appear on the map showing you the coordinates."
+Missions/Secondary/MTES03/Brief04,Text,,"This mission is about more than just science, Director. It’s about showing the world what we’re capable of. And it’s about making sure Dunmar doesn’t have to resort to… <i>other</i> methods of securing funding. I shudder to think what those might be."
+Missions/Primary/MTES03/Brief05,Text,,"Good luck, Director! And may your aim be true!"
+
+Missions/Secondary/MTES03/Debrief01,Text,,"Well done, Director, the flag is planted! Right at the precise geographical North Pole! The broadcast was a smashing success! I haven’t seen this many Kerbals glued to their screens since… well, since the last time we launched a rocket, but this was different!"
+Missions/Secondary/MTES03/Debrief02,Text,,"The images of the flag snapping in the polar wind are already iconic. Dunmar is ecstatic. He’s been giving interviews to every news outlet on <style=""OBJ-Kerbin"">Kerbin</style>, talking about “the dawn of a new era of polar exploration” and “the symbolic union of Kerbalkind with the icy north.” He even tried to convince them to rename the North Pole “Dunmar’s Peak,” but thankfully, that didn’t stick."
+Missions/Secondary/MTES03/Debrief03,Text,,"But the best news? The success of this mission has sparked serious discussions about establishing a permanent research presence at the North Pole! The higher-ups are finally seeing the value of long-term polar research. They’re talking about building a research outpost, a scientific hub at the top of the world! And it’s all thanks to you."
+Missions/Secondary/MTES03/Debrief04,Text,,"You’ve not only planted a flag, Director, you’ve planted the seed for a whole new chapter in Kerbal history. You’ve shown the world that we can achieve anything we set our minds to, even when it involves navigating to a tiny point on a giant sphere. You should be proud!"
+
+
