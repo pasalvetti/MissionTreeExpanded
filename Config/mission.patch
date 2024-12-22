@@ -33,6 +33,23 @@
 			RewardAmount: 50.0;
 		}
     }
+
+// add KSP2Mission_Secondary_Kerbin_Satellite as a child mission of KSP2Mission_Secondary_Kerbin_OrbitEccentric
+    #KSP2Mission_Secondary_Kerbin_OrbitEccentric {
+        +ActivateMissionAction {
+            TargetMissionID: KSP2Mission_Secondary_Kerbin_Satellite;
+            MissionOwner: Agency;
+        }
+    }
+
+    #Main_Mun_OSS {
+// remove KSP2Mission_Secondary_Kerbin_Satellite as it now spawns from KSP2Mission_Secondary_Kerbin_OrbitEccentric
+        * > ContentBranches > OnSubmit > ActivateMissionAction {
+			@if $$TargetMissionID == KSP2Mission_Secondary_Kerbin_Satellite {
+				@delete;
+			}
+		}
+    }
 }
 
 // add new missions
