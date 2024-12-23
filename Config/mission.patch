@@ -71,6 +71,7 @@
 }
 
 // add new missions
+// Fly by the Mun
 @new(MTE_Main_Mun_Flyby)
 :missions {
     MissionGroup: "";
@@ -206,6 +207,7 @@
     MissionSaveAssetKey: "";
 }
 
+// Disco Party
 @new(MTE_Secondary_Mun_OrbitInclination)
 :missions {
     MissionGroup: "";
@@ -308,6 +310,7 @@
     MissionSaveAssetKey: "";
 }
 
+// The Ice Spy
 @new(MTE_Secondary_MTES01_Polar_Orbit)
 :missions {
     MissionGroup: "";
@@ -473,7 +476,7 @@
     MissionSaveAssetKey: "";
 }
 
-
+// Polar Reconnaissance
 @new(MTE_Secondary_MTES02_Polar_Probe)
 :missions {
     MissionGroup: "";
@@ -625,6 +628,7 @@
     MissionSaveAssetKey: "";
 }
 
+// Operation Cold Feet
 @new(MTE_Secondary_MTES03_Polar_Flag)
 :missions {
     MissionGroup: "";
@@ -785,6 +789,7 @@
     MissionSaveAssetKey: "";
 }
 
+// The Frozen Frontier
 @new(MTE_Secondary_MTES04_Polar_Research_Station)
 :missions {
     MissionGroup: "";
@@ -937,6 +942,7 @@
     MissionSaveAssetKey: "";
 }
 
+// Phone Home
 @new(MTE_Secondary_MTES05_ComSat_Mun)
 :missions {
     MissionGroup: "";
