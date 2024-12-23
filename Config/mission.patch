@@ -19,15 +19,17 @@
 	}
 
     #Main_MunOrBust_04 {
+        * > ContentBranches > OnSubmit {
 // remove KSP2Mission_Secondary_Kerbin_OrbitCircular as it now spawns from MTE_Secondary_MTES01_Polar_Orbit
-        * > ContentBranches > OnSubmit > ActivateMissionAction {
-			@if $$TargetMissionID == KSP2Mission_Secondary_Kerbin_OrbitCircular {
-				@delete;
-			}
-		}
-        +ActivateMissionAction {
-            TargetMissionID: MTE_Secondary_Mun_OrbitInclination;
-            MissionOwner: Agency;
+            * > ActivateMissionAction {
+                @if $$TargetMissionID == KSP2Mission_Secondary_Kerbin_OrbitCircular {
+                    @delete;
+                }
+            }
+            +ActivateMissionAction {
+                TargetMissionID: MTE_Secondary_Mun_OrbitInclination;
+                MissionOwner: Agency;
+            }
         }
 	}
 
@@ -40,9 +42,11 @@
 
 // add KSP2Mission_Secondary_Kerbin_Satellite as a child mission of KSP2Mission_Secondary_Kerbin_OrbitEccentric
     #KSP2Mission_Secondary_Kerbin_OrbitEccentric {
-        +ActivateMissionAction {
-            TargetMissionID: KSP2Mission_Secondary_Kerbin_Satellite;
-            MissionOwner: Agency;
+        * > ContentBranches > OnSubmit {
+            +ActivateMissionAction {
+                TargetMissionID: KSP2Mission_Secondary_Kerbin_Satellite;
+                MissionOwner: Agency;
+            }
         }
     }
 
@@ -57,9 +61,11 @@
 
 // adds ComSat Mun mission after Munar Signal
     #Main_Mun_01 {
-        +ActivateMissionAction {
-            TargetMissionID: MTE_Secondary_MTES05_ComSat_Mun;
-            MissionOwner: Agency;
+        * > ContentBranches > OnSubmit {
+            +ActivateMissionAction {
+                TargetMissionID: MTE_Secondary_MTES05_ComSat_Mun;
+                MissionOwner: Agency;
+            }
         }
     }
 }
@@ -930,7 +936,6 @@
     }
     MissionSaveAssetKey: "";
 }
-
 
 @new(MTE_Secondary_MTES05_ComSat_Mun)
 :missions {
