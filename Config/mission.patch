@@ -25,6 +25,10 @@
 				@delete;
 			}
 		}
+        +ActivateMissionAction {
+            TargetMissionID: MTE_Secondary_Mun_OrbitInclination;
+            MissionOwner: Agency;
+        }
 	}
 
 // lower science reward amount (originally 100)
@@ -188,6 +192,107 @@
     MissionSaveAssetKey: "";
 }
 
+@new(MTE_Secondary_Mun_OrbitInclination)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/Mun_OrbitInclination/Name";
+    description: "Missions/Secondary/Mun_OrbitInclination/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/Mun_OrbitInclination/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Mun;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(OrbitInclination);
+                    TestWatchedValue: 69;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(OrbitInclination);
+                    TestWatchedValue: 71;
+                    propOperator: LESSER;
+                    isInput: false;
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 50.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_secondary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterKSC;
+    TriumphLoopVideoKey: reward_mission_tier1;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_shocked;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/Mun_OrbitInclination/Debrief01",
+                            ContentAddressableKey: keri_shocked,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/Mun_OrbitInclination/Debrief02",
+                            ContentAddressableKey: keri_shocked,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/Mun_OrbitInclination/Debrief03",
+                            ContentAddressableKey: keri_shocked,
+                        }
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_secondary;
+            }
+        }
+    }
+    MissionSaveAssetKey: "";
+}
 
 @new(MTE_Secondary_MTES01_Polar_Orbit)
 :missions {
