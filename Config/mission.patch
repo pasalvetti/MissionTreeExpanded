@@ -54,6 +54,14 @@
 			}
 		}
     }
+
+// adds ComSat Mun mission after Munar Signal
+    #Main_Mun_01 {
+        +ActivateMissionAction {
+            TargetMissionID: MTE_Secondary_MTES05_ComSat_Mun;
+            MissionOwner: Agency;
+        }
+    }
 }
 
 // add new missions
@@ -915,7 +923,157 @@
         }
         +OnSubmit {
 			+ActivateMissionAction {
-				TargetMissionID: MTE_Secondary_MTES04_Polar_Rover;
+				TargetMissionID: MTE_Secondary_MTES06_Polar_Rover;
+				MissionOwner: Agency;
+			}
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
+
+@new(MTE_Secondary_MTES05_ComSat_Mun)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/MTES05/Name";
+    description: "Missions/Secondary/MTES05/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/MTES05/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Mun;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(CrewCount);
+                    TestWatchedInt: 0;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasPart);
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: "antenna_0v_dish_ra-2";
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VehiclePeriapsisAltitudePropertyWatcher);
+                    TestWatchedValue: 2300000.0;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 250.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_secondary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterKSC;
+    TriumphLoopVideoKey: reward_mission_tier1;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Brief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_teaching;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES05/Brief01",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES05/Brief02",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES05/Brief03",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES05/Brief04",
+                            ContentAddressableKey: keri_teaching,
+                        }
+                    ];
+                }
+            }
+        }
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_thinking;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES05/Debrief01",
+                            ContentAddressableKey: keri_thinking,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES05/Debrief02",
+                            ContentAddressableKey: keri_thinking,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES05/Debrief03",
+                            ContentAddressableKey: keri_thinking,
+                        }
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_secondary;
+            }
+        }
+        +OnSubmit {
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_MTES07_Kerbollo;
 				MissionOwner: Agency;
 			}
         }
