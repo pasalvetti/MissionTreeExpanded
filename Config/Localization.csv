@@ -124,3 +124,29 @@ Missions/Secondary/MTES05/Brief04,Text,,"This mission could be the key to unlock
 Missions/Secondary/MTES05/Debrief01,Text,,"I’m happy to report that communications with our new satellite are crystal clear! The high periapsis is doing exactly what we hoped – minimal occlusion."
 Missions/Secondary/MTES05/Debrief02,Text,,"We’re receiving a steady stream of data now. Our analysts are already pouring over it, trying to decipher the patterns, the meaning behind the signal. It’s still a mystery, but with this continuous feed, I’m sure we’ll be making progress."
 Missions/Secondary/MTES05/Debrief03,Text,,"Oh- if you’ll excuse me, I need to get back to the analysis room. We’re picking up some interesting fluctuations in the signal, and I don’t want to miss a thing."
+
+
+
+
+
+Missions/Secondary/MTES07/Name,Text,,"Whispers from the Mun"
+Missions/Secondary/MTES07/Description,Text,,"We’ve discovered what could be a new Mun signal. We need to go there and investigate."
+Missions/Secondary/MTES07/Objective,Text,,"Land on the Mun near the new location with three Kerbals."
+
+Missions/Secondary/MTES07/Brief01,Text,,"Director… <i>[Dr. Kerman takes a deep breath and sighs]</i> Oh boy. I’ve done it again. All that excitement about the <style=""OBJ-Mun"">Mun</style>ar monument… I went a little overboard with the caffeine. I was up all night analyzing data, drawing diagrams on the whiteboard, and… well, let’s just say things got a little… <i>energetic</i>."
+Missions/Secondary/MTES07/Brief02,Text,,"So, I’ve decided to try something new. <i>[Dr. Kerman picks up a trombone and gives a short, slightly wobbly toot]</i> The trombone. Apparently, it’s supposed to be very calming. It’s… working, I think. Much better than bouncing off the walls."
+Missions/Secondary/MTES07/Brief03,Text,,"Anyway… <i>[She sets the trombone down carefully]</i> The comms satellite you deployed is doing a fantastic job. And… we’ve picked up something new. A very faint signal. It's so weak, it could be an echo of the original transmission. Or maybe someone from the previous crew forgot its phone there. You know how it is."
+Missions/Secondary/MTES07/Brief04,Text,,"Whatever it is, we need to investigate. We can't rely on the satellite alone. We need Kerbals on the ground to get a closer look.
+
+<style="TXT-Objective">Your objective is to land a crew of three at the new signal location.</style>"
+Missions/Secondary/MTES07/Brief05,Text,,"So, assemble a capable crew, equip them with the necessary scientific instruments, and prepare for a journey to the <style=""OBJ-Mun"">Mun</style>. As for me, this time, I’ll stick to the trombone."
+
+Missions/Secondary/MTES07/Debrief01,Text,,"You’re back. Well… that’s that, then."
+Missions/Secondary/MTES07/Debrief02,Text,,"At least the mission was conclusive. The new signal… was just an echo. A simple reverberation bouncing off a pile of rocks. Nothing more. I was… hoping for something more. Something… <i>meaningful</i>."
+Missions/Secondary/MTES07/Debrief03,Text,,"It seems we got a little carried away. This is a reminder, I suppose, that science is a process of trial and error. Sometimes, you follow a lead that turns out to be a dead end. It’s frustrating, but it’s part of the job."
+Missions/Secondary/MTES07/Debrief04,Text,,"It seems we got a little carried away. This is a reminder, I suppose, that science is a process of trial and error. Sometimes, you follow a lead that turns out to be a dead end. It’s frustrating, but it’s part of the job.
+
+You executed the mission flawlessly, of course. You followed up on every lead, no matter how faint. And for that, I thank you."
+Missions/Secondary/MTES07/Debrief05,Text,,"Even though this particular investigation didn’t yield the results we were hoping for, it doesn’t diminish the importance of the initial discovery. The monument is still there. We may not understand it yet, but we will continue to study it. We will continue to search for answers.
+
+And who knows? Maybe, one day, we’ll find what we’re looking for. But for now we’ll just have to keep listening."
