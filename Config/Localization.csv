@@ -93,7 +93,7 @@ Missions/Secondary/MTES03/Debrief04,Text,,"You’ve not only planted a flag, Dir
 
 Missions/Secondary/MTES04/Name,Text,,"The Frozen Frontier"
 Missions/Secondary/MTES04/Description,Text,,"We have a go to establish the first research station at the North Pole."
-Missions/Secondary/MTES04/Objective,Text,,"Land a base station at the North Pole with a ASCM-B atmospheric survey and three Kerbals."
+Missions/Secondary/MTES04/Objective,Text,,"Land a base station at the North Pole with a RGSCM-01 science experiment and three Kerbals."
 
 Missions/Secondary/MTES04/Brief01,Text,,"Public support is at an all-time high, and Dunmar… well, he’s finally calmed down a bit. He’s stopped wearing that makeshift ice crown, at least. But he’s already moved on to his next grand scheme: a permanent research station at the North Pole!"
 Missions/Secondary/MTES04/Brief02,Text,,"And you know what? Management actually agreed! They were so impressed with the positive feedback from the flag mission that they’ve given us the go-ahead to establish a polar outpost. This will be a state-of-the-art facility, equipped with everything our scientists need to study the polar environment. And, perhaps more importantly, it will serve as Dunmar’s… <i>summer retreat</i>. He’s already packing his thermal underwear and a lifetime supply of hot cocoa."
@@ -105,6 +105,7 @@ Missions/Secondary/MTES04/Brief04,Text,,"Good luck, Director. This is a big unde
 Missions/Secondary/MTES04/Debrief01,Text,,"It’s a magnificent sight over there at the North Pole Research Station – a beacon of science amidst the icy wilderness! We now have a fully functional research outpost at the top of <style=""OBJ-Kerbin"">Kerbin</style>!"
 Missions/Secondary/MTES04/Debrief02,Text,,"Dunmar wants to move in. He has started issuing decrees about proper igloo etiquette. We’re working on getting him to tone it down a bit."
 Missions/Secondary/MTES04/Debrief03,Text,,"Now, if you’ll excuse me, I need to go mediate a dispute between Dunmar and the station’s botanist about the optimal temperature for growing ice lettuce."
+
 
 
 
