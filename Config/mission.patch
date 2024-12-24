@@ -833,7 +833,7 @@
                     PropertyTypeAQN: get-property-watcher(HasPart);
                     propOperator: EQUAL;
                     isInput: true;
-                    Inputstring: "collector_0v_radial_science_atmospheric";
+                    Inputstring: "collector_0v_radial_science_general";
                 }
                 +EventCondition {
                     EventTypeAQN: get-message(VesselLandedGroundAtRestMessage);

@@ -99,13 +99,12 @@ Missions/Secondary/MTES04/Brief01,Text,,"Public support is at an all-time high, 
 Missions/Secondary/MTES04/Brief02,Text,,"And you know what? Management actually agreed! They were so impressed with the positive feedback from the flag mission that they’ve given us the go-ahead to establish a polar outpost. This will be a state-of-the-art facility, equipped with everything our scientists need to study the polar environment. And, perhaps more importantly, it will serve as Dunmar’s… <i>summer retreat</i>. He’s already packing his thermal underwear and a lifetime supply of hot cocoa."
 Missions/Secondary/MTES04/Brief03,Text,,"Now, we’re not aiming for the <i>exact</i> geographical North Pole this time. Anywhere above the 80th parallel will do. We want a location that’s relatively flat, stable, and preferably not too close to any active glaciers. We don’t want Dunmar’s retreat to become an impromptu ice floe.
 
-<style="TXT-Objective">Establish a permanent research station at the North Pole, above the 80th parallel. The station must be equipped with a ASCM-B atmospheric survey and crewed by three Kerbals.</style>"
+<style="TXT-Objective">Establish a permanent research station at the North Pole, above the 80th parallel. The station must be equipped with a RGSCM-01 “Science Jr. Jr.” and crewed by three Kerbals.</style>"
 Missions/Secondary/MTES04/Brief04,Text,,"Good luck, Director. This is a big undertaking, but I know you’re up to the challenge."
 
 Missions/Secondary/MTES04/Debrief01,Text,,"It’s a magnificent sight over there at the North Pole Research Station – a beacon of science amidst the icy wilderness! We now have a fully functional research outpost at the top of <style=""OBJ-Kerbin"">Kerbin</style>!"
 Missions/Secondary/MTES04/Debrief02,Text,,"Dunmar wants to move in. He has started issuing decrees about proper igloo etiquette. We’re working on getting him to tone it down a bit."
 Missions/Secondary/MTES04/Debrief03,Text,,"Now, if you’ll excuse me, I need to go mediate a dispute between Dunmar and the station’s botanist about the optimal temperature for growing ice lettuce."
-
 
 
 
