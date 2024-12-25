@@ -113,13 +113,13 @@ Missions/Secondary/MTES04/Debrief03,Text,,"Now, if you’ll excuse me, I need to
 
 Missions/Secondary/MTES05/Name,Text,,"Phone Home"
 Missions/Secondary/MTES05/Description,Text,,"We need to monitor that mysterious signal closely. Unfortunately, the Mun is not yet connected to the Internet. No matter! Let’s deploy its first telecommunication satellite."
-Missions/Secondary/MTES05/Objective,Text,,"Orbit the Mun with a periapsis of at least 2300km, a RA-2 antenna dish and no crew."
+Missions/Secondary/MTES05/Objective,Text,,"Orbit the Mun with a periapsis of at least 1900km, a RA-2 antenna dish and no crew."
 
 Missions/Secondary/MTES05/Brief01,Text,,"Director! I’m still shaken up by the discovery of that monument on the <style=""OBJ-Mun"">Mun</style>… it’s unlike anything we’ve ever encountered!"
 Missions/Secondary/MTES05/Brief02,Text,,"We’ve analyzed the signal as best we can, but it’s weak and intermittent. We need a more consistent way to monitor it, to try and decipher its meaning. That’s why we’re launching a communication satellite."
-Missions/Secondary/MTES05/Brief03,Text,,"We need to maintain a constant datafeed with <style=""OBJ-Kerbin"">Kerbin</style> to capture every blip of that signal. That means minimizing signal occlusion by the <style=""OBJ-Mun"">Mun</style> itself. A periapsis of 2300 kilometers will ensure that the <style=""OBJ-Mun"">Mun</style> doesn’t block the satellite’s line of sight to <style=""OBJ-Kerbin"">Kerbin</style> for extended periods. Also, we are going to need a powerful relay antenna. Be sure to check with R&D that they have what we need. I know they were working on developing an antenna that can cover the entire <style=""OBJ-Kerbin"">Kerbin</style> system.
+Missions/Secondary/MTES05/Brief03,Text,,"We need to maintain a constant datafeed with <style=""OBJ-Kerbin"">Kerbin</style> to capture every blip of that signal. That means minimizing signal occlusion by the <style=""OBJ-Mun"">Mun</style> itself. A periapsis of 1900 kilometers will ensure that the <style=""OBJ-Mun"">Mun</style> doesn’t block the satellite’s line of sight to <style=""OBJ-Kerbin"">Kerbin</style> for extended periods. Also, we are going to need a powerful relay antenna. Be sure to check with R&D that they have what we need. I know they were working on developing an antenna that can cover the entire <style=""OBJ-Kerbin"">Kerbin</style> system.
 
-<style="TXT-Objective">Establish a stable orbit around the <style=""OBJ-Mun"">Mun</style> with a periapsis of at least 2300km with an unmanned craft carrying a RA-2 antenna dish.</style>"
+<style="TXT-Objective">Establish a stable orbit around the <style=""OBJ-Mun"">Mun</style> with a periapsis of at least 1900km with an unmanned craft carrying a RA-2 antenna dish.</style>"
 Missions/Secondary/MTES05/Brief04,Text,,"This mission could be the key to unlocking a wealth of knowledge about the universe. This isn’t just about science anymore; this is about understanding our place in the cosmos."
 
 Missions/Secondary/MTES05/Debrief01,Text,,"I’m happy to report that communications with our new satellite are crystal clear! The high periapsis is doing exactly what we hoped – minimal occlusion."
