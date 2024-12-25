@@ -2,6 +2,16 @@
 
 // modifications to stock missions
 :missions {
+    #Main_Kerbin_01 {
+        * > ContentBranches > OnSubmit {
+// unlocks Dress Rehearsal
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_Kerbin_EVAGround;
+				MissionOwner: Agency;
+			}
+		}
+    }
+
 	#Main_Kerbin_03 {
         * > ContentBranches > OnSubmit {
 // change unlocked mission from Main_MunOrBust_04 to MTE_Main_Mun_Flyby
@@ -97,6 +107,109 @@
 }
 
 // add new missions
+// Dress Rehearsal
+@new(MTE_Secondary_Kerbin_EVAGround)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/Kerbin_EVAGround/Name";
+    description: "Missions/Secondary/Kerbin_EVAGround/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Active;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/Kerbin_EVAGround/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Kerbin;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+				+PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselResearchLocation);
+                    TestWatchedstring: Kerbin_Landed_KerbinKSC;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+				+PropertyCondition {
+					RequireCurrentValue: true;
+					PropertyTypeAQN: get-property-watcher(IsActiveVesselEva);
+					TestWatchedBool: true;
+					propOperator: EQUAL;
+					isInput: false;
+				}
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 25.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_primary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterJebsJunkyard;
+    TriumphLoopVideoKey: reward_mission_tier1;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_annoyed;
+                * > Dialogs {
+                    Entries: [
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_EVAGround/Debrief01",
+						ContentAddressableKey: keri_annoyed,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_EVAGround/Debrief02",
+						ContentAddressableKey: keri_annoyed,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_EVAGround/Debrief03",
+						ContentAddressableKey: keri_annoyed,
+					},
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_primary_returned_to_missionControl;
+            }
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
 // Fly by the Mun
 @new(MTE_Main_Mun_Flyby)
 :missions {
