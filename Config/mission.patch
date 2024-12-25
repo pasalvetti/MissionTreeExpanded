@@ -1139,7 +1139,7 @@
                 +MissionDestinationPosition {
                     celestialBodyName: Mun;
                     cb_Coords: {
-                        x: 55.07,
+                        x: 34.93,
                         y: -28.48,
                         z: 200.0
                     };
@@ -1432,9 +1432,9 @@
                 +MissionDestinationPosition {
                     celestialBodyName: Minmus;
                     cb_Coords: {
-                        x: 63.36,
-                        y: -22.8,
-                        z: 60.0
+                        x: 26.640,
+                        y: -22.800,
+                        z: 65.46127
                     };
                 }
             }
@@ -1449,21 +1449,21 @@
                 +PropertyCondition {
                     RequireCurrentValue: true;
                     PropertyTypeAQN: get-property-watcher(VehicleLatitudePropertyWatcher);
-                    TestWatchedValue: 26.0;
+                    TestWatchedValue: 26.60;
                     propOperator: GREATER;
                     isInput: false;
                 }
                 +PropertyCondition {
                     RequireCurrentValue: true;
                     PropertyTypeAQN: get-property-watcher(VehicleLatitudePropertyWatcher);
-                    TestWatchedValue: 28.0;
+                    TestWatchedValue: 26.7;
                     propOperator: LESSER;
                     isInput: false;
                 }
                 +PropertyCondition {
                     RequireCurrentValue: true;
                     PropertyTypeAQN: get-property-watcher(VehicleLongitudePropertyWatcher);
-                    TestWatchedValue: -24.0;
+                    TestWatchedValue: -22.9;
                     propOperator: GREATER;
                     isInput: false;
                 }
