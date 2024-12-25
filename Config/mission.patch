@@ -51,7 +51,7 @@
     }
 
     #Main_Mun_OSS {
-// remove KSP2Mission_Secondary_Kerbin_Satellite as it now spawns from KSP2Mission_Secondary_Kerbin_OrbitEccentric
+// removes KSP2Mission_Secondary_Kerbin_Satellite as it now spawns from KSP2Mission_Secondary_Kerbin_OrbitEccentric
         * > ContentBranches > OnSubmit > ActivateMissionAction {
 			@if $$TargetMissionID == KSP2Mission_Secondary_Kerbin_Satellite {
 				@delete;
@@ -68,6 +68,17 @@
             }
         }
     }
+
+    #Main_Minmus_BadSignal {
+        * > ContentBranches > OnSubmit {
+// adds I, P.A.I.G.E. as a child of Bad Signal
+            +ActivateMissionAction {
+                TargetMissionID: MTE_Secondary_Minmus_DestroyProbe;
+                MissionOwner: Agency;
+            }
+        }
+    }
+
 }
 
 // add new missions
@@ -1286,3 +1297,101 @@
     }
     MissionSaveAssetKey: "";
 }
+
+// I, P.A.I.G.E.
+@new(MTE_Secondary_Minmus_DestroyProbe)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/Minmus_DestroyProbe/Name";
+    description: "Missions/Secondary/Minmus_DestroyProbe/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/Minmus_DestroyProbe/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(IsDestroyedByCbCollision);
+					TestWatchedBool: true;
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: Minmus;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(CrewCount);
+                    TestWatchedInt: 0;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 250.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_secondary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterKSC;
+    TriumphLoopVideoKey: reward_mission_tier1;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_teaching;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/Minmus_DestroyProbe/Debrief01",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/Minmus_DestroyProbe/Debrief02",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/Minmus_DestroyProbe/Debrief03",
+                            ContentAddressableKey: keri_teaching,
+                        }
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_secondary;
+            }
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
