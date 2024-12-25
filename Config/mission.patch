@@ -79,6 +79,15 @@
         }
     }
 
+// adds Keostationnary Orbit as a child of Lonely Satellite
+    #KSP2Mission_Secondary_Kerbin_Satellite {
+        * > ContentBranches > OnSubmit {
+            +ActivateMissionAction {
+                TargetMissionID: KSP2Mission_Secondary_Kerbin_OrbitKeostationary;
+                MissionOwner: Agency;
+            }
+        }
+    }
 }
 
 // add new missions
