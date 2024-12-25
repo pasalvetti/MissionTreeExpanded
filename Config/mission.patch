@@ -104,6 +104,16 @@
             }
         }
     }
+
+    #Main_Minmus_01 {
+        * > ContentBranches > OnSubmit {
+// adds Landing Party as a child of Minmus Monument
+            +ActivateMissionAction {
+                TargetMissionID: MTE_Secondary_Kerbin_KerbinTourLanding;
+                MissionOwner: Agency;
+            }
+        }
+    }
 }
 
 // add new missions
@@ -1676,6 +1686,108 @@
                 }
                 EventTypeOnClosed: get-message(SpawnTriumphWindow);
                 StageEvent: Play_mission_alert_secondary;
+            }
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
+@new(MTE_Secondary_Kerbin_KerbinTourLanding)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/Kerbin_KerbinTourLanding/Name";
+    description: "Missions/Secondary/Kerbin_KerbinTourLanding/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/Kerbin_KerbinTourLanding/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+				+PropertyCondition {
+					RequireCurrentValue: true;
+					PropertyTypeAQN: get-property-watcher(HasBeenToResearchLocation);
+					TestWatchedstring: Mun_Landed;
+					propOperator: EQUAL;
+					isInput: false;
+				}
+				+PropertyCondition {
+					RequireCurrentValue: true;
+					PropertyTypeAQN: get-property-watcher(HasBeenToResearchLocation);
+					TestWatchedstring: Minmus_Landed;
+					propOperator: EQUAL;
+					isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasBeenToResearchLocation);
+                    TestWatchedstring: Kerbin_Landed;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 750.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_primary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterKHS;
+    TriumphLoopVideoKey: reward_mission_tier1;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_thinking;
+                * > Dialogs {
+                    Entries: [
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_KerbinTourLanding/Debrief01",
+						ContentAddressableKey: keri_thinking,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_KerbinTourLanding/Debrief02",
+						ContentAddressableKey: keri_thinking,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_KerbinTourLanding/Debrief03",
+						ContentAddressableKey: keri_thinking,
+					},
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_primary_returned_to_missionControl;
             }
         }
     }
