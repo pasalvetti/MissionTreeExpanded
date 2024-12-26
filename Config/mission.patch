@@ -1840,6 +1840,164 @@
     MissionSaveAssetKey: "";
 }
 
+
+// Celestial Dialogue
+@new(MTE_Secondary_MTES08_Munar_Gateway)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/MTES08/Name";
+    description: "Missions/Secondary/MTES08/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/MTES08/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Mun;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(CrewCount);
+                    TestWatchedInt: 5;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselMass);
+                    TestWatchedValue: 9.999;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VehiclePeriapsisAltitudePropertyWatcher);
+                    TestWatchedValue: 1000.0;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 750.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_secondary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterKSC;
+    TriumphLoopVideoKey: TriumphAnimation_PM04;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Brief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_joy;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES08/Brief01",
+                            ContentAddressableKey: keri_joy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES08/Brief02",
+                            ContentAddressableKey: keri_joy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES08/Brief03",
+                            ContentAddressableKey: keri_joy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES08/Brief04",
+                            ContentAddressableKey: keri_joy,
+                        }
+                    ];
+                }
+            }
+        }
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_teaching;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES08/Debrief01",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES08/Debrief02",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES08/Debrief03",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES08/Debrief04",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES08/Debrief05",
+                            ContentAddressableKey: keri_teaching,
+                        }
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_secondary;
+            }
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
+
 // I, P.A.I.G.E.
 @new(MTE_Secondary_Minmus_DestroyProbe)
 :missions {

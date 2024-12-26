@@ -182,6 +182,31 @@ And who knows? Maybe, one day, we’ll find what we’re looking for. But for no
 
 
 
+
+
+Missions/Secondary/MTES08/Name,Text,,"Celestial Dialogue"
+Missions/Secondary/MTES08/Description,Text,,"Having a satellite orbiting the Mune is nice, but it doesn’t quite nail it yet! We need to establish a permanent Munar orbital station to learn more about the mysterious signal."
+Missions/Secondary/MTES08/Objective,Text,,"Establish a permanent orbital station around the Mun with at least five Kerbals and a minimum mass of 10 tons."
+
+Missions/Secondary/MTES08/Brief01,Text,,"Oh hi, Director! I was about to call you. The data we’re receiving from the <style=""OBJ-Mun"">Mun</style>ar monument is fascinating, but it’s not enough. There’s still a lot we don’t know, and we need more than just satellite data. We need Kerbals in orbit around the <style=""OBJ-Mun"">Mun</style>, constantly monitoring the monument, analyzing the signal in real-time."
+Missions/Secondary/MTES08/Brief02,Text,,"That’s why we’re launching a new initiative: a permanent <style=""OBJ-Mun"">Mun</style>ar orbital station! This will be a dedicated research facility, a home away from home for our brave Kerbalnauts as they unlock the secrets of this mysterious artifact."
+Missions/Secondary/MTES08/Brief03,Text,,"This isn’t just a quick flyby, Director. We’re talking about a long-term presence. This station needs to be spacious enough to accommodate a full crew of five scientists. I won’t be satisfied with anything less than a 10 ton station.
+
+<style="TXT-Objective">Establish a permanent orbital station around the <style=""OBJ-Mun"">Mun</style> with at least five Kerbals and a minimum mass of 10 tons.</style>"
+Missions/Secondary/MTES08/Brief04,Text,,"I promise if you manage to pull this off I’ll learn trumpet in addition to the trombone!"
+
+Missions/Secondary/MTES08/Debrief01,Text,,"Well done! About that… <i>trumpet</i> thing I mentioned earlier… let’s just… forget about that. I was clearly lacking caffeine. The trombone is enough, I think you’ll agree."
+Missions/Secondary/MTES08/Debrief02,Text,,"Anyway, have you heard the news, Director? The team at the station made a significant discovery. The signal strength from the <style=""OBJ-Mun"">Mun</style>ar monument… it’s not uniform. It is strongest towards… <style=""OBJ-Minmus"">Minmus</style>."
+Missions/Secondary/MTES08/Debrief03,Text,,"It’s as if the signal isn’t directed at <style=""OBJ-Kerbin"">Kerbin</style> at all, but at <style=""OBJ-Minmus"">Minmus</style>. As if the two moons are somehow… connected. This adds a whole new layer to the mystery. Why would this monument be transmitting a signal towards our smaller moon?"
+Missions/Secondary/MTES08/Debrief04,Text,,"I don’t know about you, but I’ve never eavesdrop on a conversation between two celestial bodies before!"
+Missions/Secondary/MTES08/Debrief05,Text,,"This is a new direction for our research, and I have a feeling… this is just the beginning."
+
+
+
+
+
+
+
 Missions/Secondary/MTES09/Name,Text,,"Picnic At Teetering Rock"
 Missions/Secondary/MTES09/Description,Text,,"Satellite imagery has revealed an unusual rock formation on Minmus. Curiosity is strong among Kerbals, let’s not miss this opportunity to go out into the field!"
 Missions/Secondary/MTES09/Objective,Text,,"Land near the rock formation on Minmus."
@@ -195,3 +220,7 @@ Missions/Secondary/MTES09/Brief03,Text,,"Good luck, and try not to eat the rocks
 Missions/Secondary/MTES09/Debrief01,Text,,"Welcome back! The geological analysis you made confirms the rock is a natural formation, likely caused by some unusual layering and erosion patterns. Nothing sentient, no alien device, no cosmic beings, just… rocks. Very interesting rocks, though!"
 Missions/Secondary/MTES09/Debrief02,Text,,"We now have a much better understanding of <style=""OBJ-Minmus"">Minmus</style>’s geological history. And we also have some excellent new desktop backgrounds for <style=""KSC-Mission-Control"">Mission Control</style>."
 Missions/Secondary/MTES09/Debrief03,Text,,"This would make an excellent picnic spot, I must say. I’m starting to think I missed out on a good opportunity there. Maybe we should organize a <style=""KSC-Mission-Control"">Mission Control</style> field trip to <style=""OBJ-Minmus"">Minmus</style> sometime."
+
+
+
+
