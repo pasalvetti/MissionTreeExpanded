@@ -1235,7 +1235,7 @@
     }
     currentStageIndex: 0;
     Hidden: false;
-    MissionGranterKey: MissionGranterKSC;
+    MissionGranterKey: MissionGranterMTETest;
     TriumphLoopVideoKey: reward_mission_tier1;
     VisibleRewards: true;
     pendingCompletionTest: false;
