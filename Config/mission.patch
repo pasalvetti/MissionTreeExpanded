@@ -14,15 +14,20 @@
 
 	#Main_Kerbin_03 {
         * > ContentBranches > OnSubmit {
-// change unlocked mission from Main_MunOrBust_04 to MTE_Main_Mun_Flyby
+// changes unlocked mission from Mun or Bust to Fly by the Mun
             * > ActivateMissionAction {
                 @if $$TargetMissionID == Main_MunOrBust_04 {
                     TargetMissionID: MTE_Main_Mun_Flyby;
                 }
             }
-// unlock MTE_Secondary_MTES01_Polar_Orbit
+// unlocks This Ice Spy
 			+ActivateMissionAction {
 				TargetMissionID: MTE_Secondary_MTES01_Polar_Orbit;
+				MissionOwner: Agency;
+			}
+// unlocks This Is Very Normal
+            +ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_Kerbin_OrbitInclination;
 				MissionOwner: Agency;
 			}
 		}
@@ -209,6 +214,116 @@
 						DialogEntryType: Text,
 						LocKey: "Missions/Secondary/Kerbin_EVAGround/Debrief03",
 						ContentAddressableKey: keri_annoyed,
+					},
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_primary_returned_to_missionControl;
+            }
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
+// This Is Very Normal
+@new(MTE_Secondary_Kerbin_OrbitInclination)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/Kerbin_OrbitInclination/Name";
+    description: "Missions/Secondary/Kerbin_OrbitInclination/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/Kerbin_OrbitInclination/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+				 +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Kerbin;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VehiclePeriapsisAltitudePropertyWatcher);
+                    TestWatchedValue: 70000.0;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+				+PropertyCondition {
+					RequireCurrentValue: true;
+					PropertyTypeAQN: get-property-watcher(OrbitInclination);
+					TestWatchedValue: 5.5;
+					propOperator: GREATER;
+					isInput: false;
+				}
+				+PropertyCondition {
+					RequireCurrentValue: true;
+					PropertyTypeAQN: get-property-watcher(OrbitInclination);
+					TestWatchedValue: 6.5;
+					propOperator: LESSER;
+					isInput: false;
+				}
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 25;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_primary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterKSC;
+    TriumphLoopVideoKey: TriumphAnimation_PM03;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_teaching;
+                * > Dialogs {
+                    Entries: [
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_OrbitInclination/Debrief01",
+						ContentAddressableKey: keri_teaching,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_OrbitInclination/Debrief02",
+						ContentAddressableKey: keri_teaching,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_OrbitInclination/Debrief03",
+						ContentAddressableKey: keri_teaching,
 					},
                     ];
                 }
