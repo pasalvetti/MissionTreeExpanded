@@ -133,6 +133,30 @@ Missions/Secondary/MTES05/Debrief03,Text,,"Oh- if you’ll excuse me, I need to 
 
 
 
+Missions/Secondary/MTES06/Name,Text,,"Dunmar's Joyride"
+Missions/Secondary/MTES06/Description,Text,,"The team at the North Pole Research Station lack comfort and mobility to performe their experiment. They need more wheels."
+Missions/Secondary/MTES06/Objective,Text,,"Send a rover to the North Pole with four wheels, an antenna, a solar panel and the Mk2 copckit."
+
+Missions/Secondary/MTES06/Brief01,Text,,"Director, we’ve received a <i>chilly</i> message from the team at the North Pole Research Station. Apparently, exploring the vast icy steppes of <style=""OBJ-Kerbin"">Kerbin</style>’s arctic by foot is proving a challenge."
+Missions/Secondary/MTES06/Brief02,Text,,"Dunmar reports that small stones keep getting into his thermal boots, and that his toes are starting to resemble… well, let’s just say he also mentioned something about a pedicure being required upon his return."
+Missions/Secondary/MTES06/Brief03,Text,,"Clearly, this situation calls for a solution. And that solution, Director, is wheels! We need to deliver a rover to the North Pole Research Station. It needs to have an antenna to stay in contact with the Station and solar panels to produce the necessary power to heat the cabin. We wouldn’t want Dunmar to catch a cold. Or, you know, become any colder than he already is."
+Missions/Secondary/MTES06/Brief04,Text,,"And while we’re at it, why don’t we design it with style and use the Mk2 cockpit? Some folks at Construction & Assembly needs to log a few more flight hours, that would be an excellent opportunity!
+
+<style="TXT-Objective">Your objective is to deliver a four-wheel rover to the North Pole. It must have an antenna, a solar panel and the mk2 “Phoenix“ cockpit.</style>"
+Missions/Secondary/MTES06/Brief05,Text,,"This rover will greatly expand the team’s operational area, allowing them to traverse the icy plains with greater ease and comfort. So, get that rover ready, Director! And maybe include a few pairs of extra-thick socks. Just in case.
+
+Good luck, and may your journey be… <i>ice</i> and easy!"
+
+Missions/Secondary/MTES06/Debrief01,Text,,"Good job, Director! I just received a transmission from Dunmar. He’s been taking the rover for test drives around the station and doing donuts in the snow. He even sent a photo of himself wearing a pair of oversized earmuffs while driving. It's… quite a sight."
+Missions/Secondary/MTES06/Debrief02,Text,,"He says his toes haven’t felt this warm since… well, since he left the Kerbal Space Center."
+Missions/Secondary/MTES06/Debrief03,Text,,"The team is already planning expeditions to explore the surrounding area to gather more data. I imagine they’ll also use it to get to the mess hall faster. I heard the hot cocoa there is top-notch."
+Missions/Secondary/MTES06/Debrief04,Text,,"I need to go check on the supply manifest. I have a feeling we’re going to need to send up a lot more fuel for that rover. Dunmar seems to have developed a fondness for driving in circles. It’s for important scientific research, of course."
+
+
+
+
+
+
 Missions/Secondary/MTES07/Name,Text,,"Whispers from the Mun"
 Missions/Secondary/MTES07/Description,Text,,"We’ve discovered what could be a new Mun signal. We need to go there and investigate."
 Missions/Secondary/MTES07/Objective,Text,,"Land on the Mun near the new location with three Kerbals."

@@ -117,6 +117,11 @@
                 TargetMissionID: MTE_Secondary_Kerbin_KerbinTourSOI;
                 MissionOwner: Agency;
             }
+// adds xxxx as a child of Minmus Monument
+            +ActivateMissionAction {
+                TargetMissionID: MTE_Secondary_MTES10_Gound_Station_Monument;
+                MissionOwner: Agency;
+            }
         }
     }
 }
@@ -1459,6 +1464,180 @@
         +OnSubmit {
 			+ActivateMissionAction {
 				TargetMissionID: MTE_Secondary_MTES07_Kerbollo;
+				MissionOwner: Agency;
+			}
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
+
+// Dunmar's Joyride
+@new(MTE_Secondary_MTES06_Polar_Rover)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/MTES06/Name";
+    description: "Missions/Secondary/MTES06/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/MTES06/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Kerbin;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VehicleLatitudePropertyWatcher);
+                    TestWatchedValue: 80.0;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasPart);
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: "cockpit_2v_m2_crew";
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasPartInGroup);
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: "0500-Antenna";
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasPartInGroup);
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: "0480-Solar Array";
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(WheelCount);
+                    TestWatchedInt: 3;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                +EventCondition {
+                    EventTypeAQN: get-message(VesselLandedGroundAtRestMessage);
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 350.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_secondary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterMTETest;
+    TriumphLoopVideoKey: reward_mission_tier1;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Brief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_shocked;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES06/Brief01",
+                            ContentAddressableKey: keri_shocked,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES06/Brief02",
+                            ContentAddressableKey: keri_shocked,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES06/Brief03",
+                            ContentAddressableKey: keri_shocked,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES06/Brief04",
+                            ContentAddressableKey: keri_shocked,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES06/Brief05",
+                            ContentAddressableKey: keri_shocked,
+                        }
+                    ];
+                }
+            }
+        }
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_happy;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES06/Debrief01",
+                            ContentAddressableKey: keri_happy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES06/Debrief02",
+                            ContentAddressableKey: keri_happy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES06/Debrief03",
+                            ContentAddressableKey: keri_happy,
+                        }
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_secondary;
+            }
+        }
+        +OnSubmit {
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_MTES11_Fuel_Delivery;
 				MissionOwner: Agency;
 			}
         }
