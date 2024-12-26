@@ -107,9 +107,9 @@
 
     #Main_Minmus_01 {
         * > ContentBranches > OnSubmit {
-// adds Landing Party as a child of Minmus Monument
+// adds Sightseeing as a child of Minmus Monument
             +ActivateMissionAction {
-                TargetMissionID: MTE_Secondary_Kerbin_KerbinTourLanding;
+                TargetMissionID: MTE_Secondary_Kerbin_KerbinTourSOI;
                 MissionOwner: Agency;
             }
         }
@@ -1692,6 +1692,116 @@
     MissionSaveAssetKey: "";
 }
 
+// Sightseeing
+@new(MTE_Secondary_Kerbin_KerbinTourSOI)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/Kerbin_KerbinTourSOI/Name";
+    description: "Missions/Secondary/Kerbin_KerbinTourSOI/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/Kerbin_KerbinTourSOI/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+				 +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasBeenToResearchLocation);
+                    TestWatchedstring: "Kerbin_HighOrbit";
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+				+PropertyCondition {
+					RequireCurrentValue: true;
+					PropertyTypeAQN: get-property-watcher(HasBeenToResearchLocation);
+					TestWatchedstring: "Mun_HighOrbit";
+					propOperator: EQUAL;
+					isInput: false;
+				}
+				+PropertyCondition {
+					RequireCurrentValue: true;
+					PropertyTypeAQN: get-property-watcher(HasBeenToResearchLocation);
+					TestWatchedstring: "Minmus_HighOrbit";
+					propOperator: EQUAL;
+					isInput: false;
+				}
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 750.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_primary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterKHS;
+    TriumphLoopVideoKey: reward_mission_tier1;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_neutral;
+                * > Dialogs {
+                    Entries: [
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_KerbinTourSOI/Debrief01",
+						ContentAddressableKey: keri_neutral,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_KerbinTourSOI/Debrief02",
+						ContentAddressableKey: keri_neutral,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbin_KerbinTourSOI/Debrief03",
+						ContentAddressableKey: keri_neutral,
+					},
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_primary_returned_to_missionControl;
+            }
+        }
+        +OnSubmit {
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_Kerbin_KerbinTourLanding;
+				MissionOwner: Agency;
+			}
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
+// Landing Party
 @new(MTE_Secondary_Kerbin_KerbinTourLanding)
 :missions {
     MissionGroup: "";
@@ -1754,7 +1864,7 @@
     currentStageIndex: 0;
     Hidden: false;
     MissionGranterKey: MissionGranterKHS;
-    TriumphLoopVideoKey: reward_mission_tier1;
+    TriumphLoopVideoKey: TriumphAnimation_PM05;
     VisibleRewards: true;
     pendingCompletionTest: false;
     maxStageID: 2;
