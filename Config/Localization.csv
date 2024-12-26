@@ -182,17 +182,16 @@ And who knows? Maybe, one day, we’ll find what we’re looking for. But for no
 
 
 
-
 Missions/Secondary/MTES09/Name,Text,,"Picnic At Teetering Rock"
 Missions/Secondary/MTES09/Description,Text,,"Satellite imagery has revealed an unusual rock formation on Minmus. Curiosity is strong among Kerbals, let’s not miss this opportunity to go out into the field!"
 Missions/Secondary/MTES09/Objective,Text,,"Land near the rock formation on Minmus."
 
-Missions/Secondary/MTES09/Brief01,Text,,"Director! We’ve been reviewing some recent satellite imagery of Minmus, and we’ve spotted something intriguing. It’s a rock formation. It might look like a stack of pancakes, but made of rock. Or perhaps… you know what? Just go see for yourself.
+Missions/Secondary/MTES09/Brief01,Text,,"Director! We’ve been reviewing some recent satellite imagery of <style=""OBJ-Minmus"">Minmus</style>, and we’ve spotted something intriguing. It’s a rock formation. It might look like a stack of pancakes, but made of rock. Or perhaps… you know what? Just go see for yourself.
 
-<style="TXT-Objective">Land at the designated coordinates on Minmus to investigate the unusual rock formation.</style>"
-Missions/Secondary/MTES09/Brief02,Text,,"We’re not sure what it is. It could be a unique geological formation, a result of some ancient Minmusian tectonic activity. Try not to get too distracted by the minty-fresh ambiance. Minmus is lovely this time of year, or so I’ve heard. I’ve never actually been. I’m more of a… <style=""KSC-Mission-Control"">Mission Control</style> kind of Kerbal."
+<style="TXT-Objective">Land at the designated coordinates on <style=""OBJ-Minmus"">Minmus</style> to investigate the unusual rock formation.</style>"
+Missions/Secondary/MTES09/Brief02,Text,,"We’re not sure what it is. It could be a unique geological formation, a result of some ancient <style=""OBJ-Minmus"">Minmus</style>ian tectonic activity. Try not to get too distracted by the minty-fresh ambiance. <style=""OBJ-Minmus"">Minmus</style> is lovely this time of year, or so I’ve heard. I’ve never actually been. I’m more of a… <style=""KSC-Mission-Control"">Mission Control</style> kind of Kerbal."
 Missions/Secondary/MTES09/Brief03,Text,,"Good luck, and try not to eat the rocks. They’re not actually pancakes. I think."
 
 Missions/Secondary/MTES09/Debrief01,Text,,"Welcome back! The geological analysis you made confirms the rock is a natural formation, likely caused by some unusual layering and erosion patterns. Nothing sentient, no alien device, no cosmic beings, just… rocks. Very interesting rocks, though!"
-Missions/Secondary/MTES09/Debrief02,Text,,"We now have a much better understanding of Minmus’s geological history. And we also have some excellent new desktop backgrounds for <style=""KSC-Mission-Control"">Mission Control</style>."
-Missions/Secondary/MTES09/Debrief03,Text,,"This would make an excellent picnic spot, I must say. I’m starting to think I missed out on a good opportunity there. Maybe we should organize a <style=""KSC-Mission-Control"">Mission Control</style> field trip to Minmus sometime."
+Missions/Secondary/MTES09/Debrief02,Text,,"We now have a much better understanding of <style=""OBJ-Minmus"">Minmus</style>’s geological history. And we also have some excellent new desktop backgrounds for <style=""KSC-Mission-Control"">Mission Control</style>."
+Missions/Secondary/MTES09/Debrief03,Text,,"This would make an excellent picnic spot, I must say. I’m starting to think I missed out on a good opportunity there. Maybe we should organize a <style=""KSC-Mission-Control"">Mission Control</style> field trip to <style=""OBJ-Minmus"">Minmus</style> sometime."
