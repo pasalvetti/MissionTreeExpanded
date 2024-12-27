@@ -1,3 +1,3 @@
 :science {
-  RequiredSciencePoints *: 2;
+  RequiredSciencePoints *: 1.7;
 }
