@@ -182,7 +182,7 @@ And who knows? Maybe, one day, we’ll find what we’re looking for. But for no
 
 
 Missions/Secondary/MTES08/Name,Text,,"Celestial Dialogue"
-Missions/Secondary/MTES08/Description,Text,,"Having a satellite orbiting the Mune is nice, but it doesn’t quite nail it yet! We need to establish a permanent Munar orbital station to learn more about the mysterious signal."
+Missions/Secondary/MTES08/Description,Text,,"Having a satellite orbiting the Mun is nice, but it doesn’t quite nail it yet! We need to establish a permanent Munar orbital station to learn more about the mysterious signal."
 Missions/Secondary/MTES08/Objective,Text,,"Establish a permanent orbital station around the Mun with at least five Kerbals and a minimum mass of 10 tons."
 
 Missions/Secondary/MTES08/Brief01,Text,,"Oh hi, Director! I was about to call you. The data we’re receiving from the <style=""OBJ-Mun"">Mun</style>ar monument is fascinating, but it’s not enough. There’s still a lot we don’t know, and we need more than just satellite data. We need Kerbals in orbit around the <style=""OBJ-Mun"">Mun</style>, constantly monitoring the monument, analyzing the signal in real-time."
