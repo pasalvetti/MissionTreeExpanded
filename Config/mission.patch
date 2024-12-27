@@ -1666,9 +1666,9 @@
                 +MissionDestinationPosition {
                     celestialBodyName: Mun;
                     cb_Coords: {
-                        x: 34.93,
-                        y: -28.48,
-                        z: 200.0
+                        x: 34.930,
+                        y: -28.482,
+                        z: 2671.01
                     };
                 }
             }
@@ -1690,28 +1690,28 @@
                 +PropertyCondition {
                     RequireCurrentValue: true;
                     PropertyTypeAQN: get-property-watcher(VehicleLatitudePropertyWatcher);
-                    TestWatchedValue: 34.0;
+                    TestWatchedValue: 34.88;
                     propOperator: GREATER;
                     isInput: false;
                 }
                 +PropertyCondition {
                     RequireCurrentValue: true;
                     PropertyTypeAQN: get-property-watcher(VehicleLatitudePropertyWatcher);
-                    TestWatchedValue: 36.0;
+                    TestWatchedValue: 34.98;
                     propOperator: LESSER;
                     isInput: false;
                 }
                 +PropertyCondition {
                     RequireCurrentValue: true;
                     PropertyTypeAQN: get-property-watcher(VehicleLongitudePropertyWatcher);
-                    TestWatchedValue: -29.0;
+                    TestWatchedValue: -28.52;
                     propOperator: GREATER;
                     isInput: false;
                 }
                 +PropertyCondition {
                     RequireCurrentValue: true;
                     PropertyTypeAQN: get-property-watcher(VehicleLongitudePropertyWatcher);
-                    TestWatchedValue: -27.0;
+                    TestWatchedValue: -28.42;
                     propOperator: LESSER;
                     isInput: false;
                 }
