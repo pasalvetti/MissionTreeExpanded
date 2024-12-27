@@ -221,3 +221,20 @@ Missions/Secondary/MTES09/Debrief03,Text,,"This would make an excellent picnic s
 
 
 
+
+
+
+Missions/Secondary/MTES11/Name,Text,,"Logistics"
+Missions/Secondary/MTES11/Description,Text,,"The North Pole station’s rover will soon be out of fuel! Is there a brave Director here to render them aid?"
+Missions/Secondary/MTES11/Objective,Text,,"Land an unmanned probe carrying a FL-R1 monopropellant tank at the designated coordinates in the North Pole."
+
+Missions/Secondary/MTES11/Brief01,Text,,"Hello, Director. As expected we have a situation at the North Pole Research Station. The team’s been having a bit <i>too</i> much fun with their new rover. They’ve been exploring every nook and cranny of the arctic, which is excellent for science, but… not so excellent for fuel consumption. They’re running low."
+Missions/Secondary/MTES11/Brief02,Text,,"I think 4,5 tons of monopropellant should be sufficient. Grab one of the spare FL-R1 at the VAB and strap it to a rocket!"
+Missions/Secondary/MTES11/Brief03,Text,,"Dunmar sent us a set of coordinates where you need to land the cargo. I have provided you with a new waypoint in the Tracking Station. The team will rendezvous with the delivery later at this location. Make sure you land as close to those coordinates as possible. We don't want them having to drive any further than necessary and waste some more precious fuel!
+
+<style="TXT-Objective">Land an unmanned probe carrying a FL-R1 monopropellant tank at the designated coordinates in the North Pole.</style>"
+Missions/Secondary/MTES11/Brief04,Text,,"This mission is vital to the continued operation of the North Pole Research Station. We can’t have our scientists stranded in the middle of the arctic with no fuel. It would be bad for morale. And for science. And for Dunmar’s toes."
+Missions/Secondary/MTES11/Brief05,Text,,"So, get that fuel tanker ready, Director! And try not to use too much fuel getting there! It would defeat the purpose of the whole operation."
+
+Missions/Secondary/MTES11/Debrief01,Text,,"We just received confirmation from the North Pole Research Station: the fuel has been acquired, and the team is back on the move!"
+Missions/Secondary/MTES11/Debrief02,Text,,"Dunmar sent a rather enthusiastic message, something about the rover “purring like a kitten”. The rest of the team also expressed their sincere appreciation. They were starting to get a little restless with the fear of being stranded out there. Apparently, card games and hot cocoa can only hold one’s attention for so long."
