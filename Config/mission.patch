@@ -74,11 +74,21 @@
 		}
     }
 
-// adds ComSat Mun mission after Munar Signal
+// adds Phone Home after Munar Signal
     #Main_Mun_01 {
         * > ContentBranches > OnSubmit {
             +ActivateMissionAction {
                 TargetMissionID: MTE_Secondary_MTES05_ComSat_Mun;
+                MissionOwner: Agency;
+            }
+        }
+    }
+
+// adds Strong Is The Far Side after Wheelin' and Dealin'
+    #KSP2Mission_Secondary_Kerbin_Rover {
+        * > ContentBranches > OnSubmit {
+            +ActivateMissionAction {
+                TargetMissionID: MTE_Secondary_MTES12_Far_Side;
                 MissionOwner: Agency;
             }
         }
@@ -2756,6 +2766,144 @@
                 }
                 EventTypeOnClosed: get-message(SpawnTriumphWindow);
                 StageEvent: Play_mission_alert_primary_returned_to_missionControl;
+            }
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
+// Strong Is The Far Side
+@new(MTE_Secondary_MTES12_Far_Side)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/MTES12/Name";
+    description: "Missions/Secondary/MTES12/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/MTES12/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/MTES12/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Mun;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VehicleLongitudePropertyWatcher);
+                    TestWatchedValue: -43.0;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VehicleLongitudePropertyWatcher);
+                    TestWatchedValue: 137.0;
+                    propOperator: LESSER;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasPartInGroup);
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: "0540-Light";
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(CrewCount);
+                    TestWatchedInt: 0;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(WheelCount);
+                    TestWatchedInt: 3;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                +EventCondition {
+                    EventTypeAQN: get-message(VesselLandedGroundAtRestMessage);
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 400.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_secondary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterRokea;
+    TriumphLoopVideoKey: reward_mission_tier2;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_teaching;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES12/Debrief01",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES12/Debrief02",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES12/Debrief03",
+                            ContentAddressableKey: keri_teaching,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES12/Debrief04",
+                            ContentAddressableKey: keri_teaching,
+                        }
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_secondary;
             }
         }
     }

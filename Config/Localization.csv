@@ -238,3 +238,24 @@ Missions/Secondary/MTES11/Brief05,Text,,"So, get that fuel tanker ready, Directo
 
 Missions/Secondary/MTES11/Debrief01,Text,,"We just received confirmation from the North Pole Research Station: the fuel has been acquired, and the team is back on the move!"
 Missions/Secondary/MTES11/Debrief02,Text,,"Dunmar sent a rather enthusiastic message, something about the rover “purring like a kitten”. The rest of the team also expressed their sincere appreciation. They were starting to get a little restless with the fear of being stranded out there. Apparently, card games and hot cocoa can only hold one’s attention for so long."
+
+
+
+
+
+
+
+Missions/Secondary/MTES12/Name,Text,,"Strong Is The Far Side"
+Missions/Secondary/MTES12/Description,Text,,"Greetings, Director! We’ve received a rather… <i>illuminating</i> proposal from Rokea Inc. You know, the light bulb company? They want to showcase the power of their space-graded light bulbs, and they’ve chosen us to help them do it.
+
+They want us to land a rover on the <i>dark side</i> of the Mun. You know, the side that’s (allegedly) perpetually shrouded in darkness? Talk about a <i>bright</i> idea!
+
+Rokea Inc. insists that their light bulb is so powerful that it can pierce even the deepest Munar shadows.
+
+If we can pull this off, Rokea will grant us a lifetime supply of light bulbs for Mission Control!"
+Missions/Secondary/MTES12/Objective,Text,,"Land an uncrewed four-wheeled rover carrying one Rokea Inc. lights on the side of the Mun opposite to Kerbin."
+
+Missions/Secondary/MTES12/Debrief01,Text,,"As you saw, the “dark side” of the <style=""OBJ-Mun"">Mun</style>… isn’t actually perpetually dark. It’s only dark during its respective night. It’s called the “dark side” because it’s the side that’s <i>never visible from <style=""OBJ-Kerbin"">Kerbin</style></i>. The <style=""OBJ-Mun"">Mun</style> is tidally locked, meaning it rotates at the same rate it orbits <style=""OBJ-Kerbin"">Kerbin</style>, so we only ever see one face. So, “dark” in this case means “unseen” or “unknown”, not “lacking sunlight”."
+Missions/Secondary/MTES12/Debrief02,Text,,"We really should be calling it the “far side” instead. It’s much more accurate. I'll send a memo to the appropriate department."
+Missions/Secondary/MTES12/Debrief03,Text,,"I probably should have mentioned that before. But then we wouldn’t have had this mission, would we?"
+Missions/Secondary/MTES12/Debrief04,Text,,"Anyway congratulations on yet another successful mission! And you have corrected some long-standing astronomical terminology. Not a bad day’s work!"
