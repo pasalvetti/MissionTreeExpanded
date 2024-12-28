@@ -2103,6 +2103,13 @@
                     propOperator: GREATER;
                     isInput: false;
                 }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VehicleApoapsisAltitudePropertyWatcher);
+                    TestWatchedValue: 2300000.0;
+                    propOperator: LESSER;
+                    isInput: false;
+                }
                 ConditionMode: AND;
             }
         }
