@@ -124,6 +124,16 @@
             }
         }
     }
+
+    #Main_Duna_01 {
+        * > ContentBranches > OnSubmit {
+// adds I, P.A.I.G.E: The Return of P.A.I.G.E as a child of Duna Monument
+            +ActivateMissionAction {
+                TargetMissionID: MTE_Secondary_Kerbol_DestroyProbe;
+                MissionOwner: Agency;
+            }
+        }
+    }
 }
 
 // add new missions
@@ -2644,6 +2654,102 @@
 						ShowsInHistory: true,
 						DialogEntryType: Text,
 						LocKey: "Missions/Secondary/Kerbin_KerbinTourLanding/Debrief03",
+						ContentAddressableKey: keri_thinking,
+					},
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_primary_returned_to_missionControl;
+            }
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
+// I, P.A.I.G.E: The Return of P.A.I.G.E
+@new(MTE_Secondary_Kerbol_DestroyProbe)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/Kerbol_DestroyProbe/Name";
+    description: "Missions/Secondary/Kerbol_DestroyProbe/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/Kerbol_DestroyProbe/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+				 +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Kerbol;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+				+PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VehicleApoapsisAltitudePropertyWatcher);
+					TestWatchedValue: 600000.0;
+                    propOperator: LESSER;
+                    isInput: false;
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 2000.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_primary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterKSC;
+    TriumphLoopVideoKey: reward_mission_tier2;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_thinking;
+                * > Dialogs {
+                    Entries: [
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbol_DestroyProbe/Debrief01",
+						ContentAddressableKey: keri_thinking,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbol_DestroyProbe/Debrief02",
+						ContentAddressableKey: keri_thinking,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/Kerbol_DestroyProbe/Debrief03",
 						ContentAddressableKey: keri_thinking,
 					},
                     ];
