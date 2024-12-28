@@ -2050,7 +2050,6 @@
     MissionSaveAssetKey: "";
 }
 
-
 // Celestial Dialogue
 @new(MTE_Secondary_MTES08_Munar_Gateway)
 :missions {
@@ -2095,6 +2094,13 @@
                     PropertyTypeAQN: get-property-watcher(VehiclePeriapsisAltitudePropertyWatcher);
                     TestWatchedValue: 1000.0;
                     propOperator: GREATER;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VehicleApoapsisAltitudePropertyWatcher);
+                    TestWatchedValue: 2900000.0;
+                    propOperator: LESSER;
                     isInput: false;
                 }
                 ConditionMode: AND;
