@@ -2099,8 +2099,8 @@
                 +PropertyCondition {
                     RequireCurrentValue: true;
                     PropertyTypeAQN: get-property-watcher(VehicleApoapsisAltitudePropertyWatcher);
-                    TestWatchedValue: 2900000.0;
-                    propOperator: LESSER;
+                    TestWatchedValue: 1000.0;
+                    propOperator: GREATER;
                     isInput: false;
                 }
                 ConditionMode: AND;
