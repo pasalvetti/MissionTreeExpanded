@@ -12,6 +12,16 @@
 		}
     }
 
+    #Main_Kerbin_02 {
+        * > ContentBranches > OnSubmit {
+// unlocks Survival Training, I
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_MTES13_Survival_Training_Desert;
+				MissionOwner: Agency;
+			}
+		}
+    }
+
 	#Main_Kerbin_03 {
         * > ContentBranches > OnSubmit {
 // changes unlocked mission from Mun or Bust to Fly by the Mun
@@ -3012,6 +3022,12 @@
                 EventTypeOnClosed: get-message(SpawnTriumphWindow);
                 StageEvent: Play_mission_alert_secondary;
             }
+        }
+        +OnSubmit {
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_MTES14_Survival_Training_Mountain;
+				MissionOwner: Agency;
+			}
         }
     }
     MissionSaveAssetKey: "";
