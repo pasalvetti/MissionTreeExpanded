@@ -278,3 +278,22 @@ Missions/Secondary/MTES13/Debrief03,Text,,"As for me, I went through a survival 
 
 
 
+
+
+
+Missions/Secondary/MTES14/Name,Text,,"Survival Training, II"
+Missions/Secondary/MTES14/Description,Text,,"Our new Kerbonaut recruits have proven their mettle in the harsh desert environment where they’ve faced scorching sun, scarce water, and enough sand to fill a small Munar crater. But their training is not over. It’s time to test their resilience in the treacherous Kerbin mountains. It’s a far cry from the flat expanse of the desert. The constant threat of falling will perhaps accustom them to weightlessness!
+
+May their survival skills be <i>peak</i> performance!
+
+Sidenote: explosions are considered a valid form of signaling for help.
+
+Sidenote 2: we’d prefer they use them as a last resort. We don't want to start any avalanches."
+Missions/Secondary/MTES14/Objective,Text,,"Ferry three Kerbals in the mountains."
+
+Missions/Secondary/MTES14/Debrief01,Text,,"So how did that training go? I heard they all made it back intact! It sounds like they truly earned their Kerbonaut wings."
+Missions/Secondary/MTES14/Debrief02,Text,,"I also heard they started a fire in the pouring rain using a rocket engine! Which, while technically within the rules, did raise a few eyebrows here in <style=""KSC-Mission-Control"">Mission Control</style>. But hey, it worked! And that’s what matters, right?"
+Missions/Secondary/MTES14/Debrief03,Text,,"They’re now fully qualified Kerbonauts! They are ready to explore the cosmos. We have a new generation of explorers ready to boldly go where no Kerbal has gone before! Now… let's get them some rockets!"
+
+
+
