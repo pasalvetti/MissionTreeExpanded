@@ -2802,11 +2802,6 @@
             Objective: "Missions/Secondary/MTES12/Objective";
             MissionRewardType: None;
             DisplayObjective: true;
-            name: Check;
-            description: "";
-            Objective: "Missions/Secondary/MTES12/Objective";
-            MissionRewardType: None;
-            DisplayObjective: true;
             +ConditionSet {
                 +PropertyCondition {
                     RequireCurrentValue: true;
