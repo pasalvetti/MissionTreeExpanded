@@ -32,6 +32,30 @@ Missions/Primary/MTE01/Debrief03,Text,,"Now, it's time to take the next logical 
 
 
 
+
+Missions/Primary/MTE02/Name,Text,,"Celestial Dialogue"
+Missions/Primary/MTE02/Description,Text,,"Having a satellite orbiting the Mun is nice, but it doesn’t quite nail it yet! We need to establish a permanent Munar orbital station to learn more about the mysterious signal."
+Missions/Primary/MTE02/Objective,Text,,"Establish a permanent orbital station around the Mun with at least five Kerbals and a minimum mass of 10 tons."
+
+Missions/Primary/MTE02/Brief01,Text,,"Oh hi, Director! I was about to call you. The data we’re receiving from the <style=""OBJ-Mun"">Mun</style>ar monument is fascinating, but it’s not enough. There’s still a lot we don’t know, and we need more than just satellite data. We need Kerbals in orbit around the <style=""OBJ-Mun"">Mun</style>, constantly monitoring the monument, analyzing the signal in real-time."
+Missions/Primary/MTE02/Brief02,Text,,"That’s why we’re launching a new initiative: a permanent <style=""OBJ-Mun"">Mun</style>ar orbital station! This will be a dedicated research facility, a home away from home for our brave Kerbonauts as they unlock the secrets of this mysterious artifact."
+Missions/Primary/MTE02/Brief03,Text,,"This isn’t just a quick flyby, Director. We’re talking about a long-term presence. This station needs to be spacious enough to accommodate a full crew of five scientists. I won’t be satisfied with anything less than a 10 ton station.
+
+<style="TXT-Objective">Establish a permanent orbital station around the <style=""OBJ-Mun"">Mun</style> with at least five Kerbals and a minimum mass of 10 tons.</style>"
+Missions/Primary/MTE02/Brief04,Text,,"I promise if you manage to pull this off I’ll learn trumpet in addition to the trombone!"
+
+Missions/Primary/MTE02/Debrief01,Text,,"Well done! About that… <i>trumpet</i> thing I mentioned earlier… let’s just… forget about that. I was clearly lacking caffeine. The trombone is enough, I think you’ll agree."
+Missions/Primary/MTE02/Debrief02,Text,,"Anyway, have you heard the news, Director? The team at the station made a significant discovery. The signal strength from the <style=""OBJ-Mun"">Mun</style>ar monument… it’s not uniform. It is strongest towards… <style=""OBJ-Minmus"">Minmus</style>."
+Missions/Primary/MTE02/Debrief03,Text,,"It’s as if the signal isn’t directed at <style=""OBJ-Kerbin"">Kerbin</style> at all, but at <style=""OBJ-Minmus"">Minmus</style>. As if the two moons are somehow… connected. This adds a whole new layer to the mystery. Why would this monument be transmitting a signal towards our smaller moon?"
+Missions/Primary/MTE02/Debrief04,Text,,"I don’t know about you, but I’ve never eavesdrop on a conversation between two celestial bodies before!"
+Missions/Primary/MTE02/Debrief05,Text,,"This is a new direction for our research, and I have a feeling… this is just the beginning."
+
+
+
+
+
+
+
 Missions/Secondary/MTES01/Name,Text,,"The Ice Spy"
 Missions/Secondary/MTES01/Description,Text,,"What does the North Pole look like exactly? Time to find out!"
 Missions/Secondary/MTES01/Objective,Text,,"Achieve an orbit around Kerbin with a 90 degree inclinaison."
@@ -176,27 +200,6 @@ Missions/Secondary/MTES07/Debrief04,Text,,"You executed the mission flawlessly, 
 Missions/Secondary/MTES07/Debrief05,Text,,"Even though this particular investigation didn’t yield the results we were hoping for, it doesn’t diminish the importance of the initial discovery. The monument is still there. We may not understand it yet, but we will continue to study it. We will continue to search for answers.
 
 And who knows? Maybe, one day, we’ll find what we’re looking for. But for now we’ll just have to keep listening."
-
-
-
-
-
-Missions/Secondary/MTES08/Name,Text,,"Celestial Dialogue"
-Missions/Secondary/MTES08/Description,Text,,"Having a satellite orbiting the Mun is nice, but it doesn’t quite nail it yet! We need to establish a permanent Munar orbital station to learn more about the mysterious signal."
-Missions/Secondary/MTES08/Objective,Text,,"Establish a permanent orbital station around the Mun with at least five Kerbals and a minimum mass of 10 tons."
-
-Missions/Secondary/MTES08/Brief01,Text,,"Oh hi, Director! I was about to call you. The data we’re receiving from the <style=""OBJ-Mun"">Mun</style>ar monument is fascinating, but it’s not enough. There’s still a lot we don’t know, and we need more than just satellite data. We need Kerbals in orbit around the <style=""OBJ-Mun"">Mun</style>, constantly monitoring the monument, analyzing the signal in real-time."
-Missions/Secondary/MTES08/Brief02,Text,,"That’s why we’re launching a new initiative: a permanent <style=""OBJ-Mun"">Mun</style>ar orbital station! This will be a dedicated research facility, a home away from home for our brave Kerbonauts as they unlock the secrets of this mysterious artifact."
-Missions/Secondary/MTES08/Brief03,Text,,"This isn’t just a quick flyby, Director. We’re talking about a long-term presence. This station needs to be spacious enough to accommodate a full crew of five scientists. I won’t be satisfied with anything less than a 10 ton station.
-
-<style="TXT-Objective">Establish a permanent orbital station around the <style=""OBJ-Mun"">Mun</style> with at least five Kerbals and a minimum mass of 10 tons.</style>"
-Missions/Secondary/MTES08/Brief04,Text,,"I promise if you manage to pull this off I’ll learn trumpet in addition to the trombone!"
-
-Missions/Secondary/MTES08/Debrief01,Text,,"Well done! About that… <i>trumpet</i> thing I mentioned earlier… let’s just… forget about that. I was clearly lacking caffeine. The trombone is enough, I think you’ll agree."
-Missions/Secondary/MTES08/Debrief02,Text,,"Anyway, have you heard the news, Director? The team at the station made a significant discovery. The signal strength from the <style=""OBJ-Mun"">Mun</style>ar monument… it’s not uniform. It is strongest towards… <style=""OBJ-Minmus"">Minmus</style>."
-Missions/Secondary/MTES08/Debrief03,Text,,"It’s as if the signal isn’t directed at <style=""OBJ-Kerbin"">Kerbin</style> at all, but at <style=""OBJ-Minmus"">Minmus</style>. As if the two moons are somehow… connected. This adds a whole new layer to the mystery. Why would this monument be transmitting a signal towards our smaller moon?"
-Missions/Secondary/MTES08/Debrief04,Text,,"I don’t know about you, but I’ve never eavesdrop on a conversation between two celestial bodies before!"
-Missions/Secondary/MTES08/Debrief05,Text,,"This is a new direction for our research, and I have a feeling… this is just the beginning."
 
 
 

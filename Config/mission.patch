@@ -106,7 +106,7 @@
 
     #Main_Minmus_BadSignal {
         * > ContentBranches > OnSubmit {
-// removes Keostationnary Orbit from Bad Signal and adds Picnic at Teetering Rock instead
+// removes Keostationnary Orbit from Bad Signal
             * > ActivateMissionAction {
                 @if $$TargetMissionID == KSP2Mission_Secondary_Kerbin_OrbitKeostationary {
                     @delete;
@@ -144,10 +144,15 @@
             }
         }
 // adds xxxx as a child of Minmus Monument
-            +ActivateMissionAction {
-                TargetMissionID: MTE_Secondary_MTES10_Gound_Station_Monument;
-                MissionOwner: Agency;
-            }
+        +ActivateMissionAction {
+            TargetMissionID: MTE_Secondary_MTES10_Gound_Station_Monument;
+            MissionOwner: Agency;
+        }
+// adds Celestial Dialogue as a child of Minmus Monument
+        +ActivateMissionAction {
+            TargetMissionID: MTE_Primary_MTE02_Munar_Gateway;
+            MissionOwner: Agency;
+        }
     }
 
     #Main_Duna_01 {
@@ -2055,22 +2060,16 @@
                 StageEvent: Play_mission_alert_secondary;
             }
         }
-        +OnSubmit {
-			+ActivateMissionAction {
-				TargetMissionID: MTE_Secondary_MTES08_Munar_Gateway;
-				MissionOwner: Agency;
-			}
-        }
     }
     MissionSaveAssetKey: "";
 }
 
 // Celestial Dialogue
-@new(MTE_Secondary_MTES08_Munar_Gateway)
+@new(MTE_Primary_MTE02_Munar_Gateway)
 :missions {
     MissionGroup: "";
-    name: "Missions/Secondary/MTES08/Name";
-    description: "Missions/Secondary/MTES08/Description";
+    name: "Missions/Secondary/MTE02/Name";
+    description: "Missions/Secondary/MTE02/Description";
     GameModeFeatureId: ExplorationMissions;
     type: Secondary;
     Owner: Agency;
@@ -2079,7 +2078,7 @@
         +_0 {
             name: Check;
             description: "";
-            Objective: "Missions/Secondary/MTES08/Objective";
+            Objective: "Missions/Secondary/MTE02/Objective";
             MissionRewardType: None;
             DisplayObjective: true;
             +ConditionSet {
@@ -2164,25 +2163,25 @@
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTES08/Brief01",
+                            LocKey: "Missions/Secondary/MTE02/Brief01",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTES08/Brief02",
+                            LocKey: "Missions/Secondary/MTE02/Brief02",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTES08/Brief03",
+                            LocKey: "Missions/Secondary/MTE02/Brief03",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTES08/Brief04",
+                            LocKey: "Missions/Secondary/MTE02/Brief04",
                             ContentAddressableKey: keri_joy,
                         }
                     ];
@@ -2198,31 +2197,31 @@
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTES08/Debrief01",
+                            LocKey: "Missions/Secondary/MTE02/Debrief01",
                             ContentAddressableKey: keri_teaching,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTES08/Debrief02",
+                            LocKey: "Missions/Secondary/MTE02/Debrief02",
                             ContentAddressableKey: keri_teaching,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTES08/Debrief03",
+                            LocKey: "Missions/Secondary/MTE02/Debrief03",
                             ContentAddressableKey: keri_teaching,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTES08/Debrief04",
+                            LocKey: "Missions/Secondary/MTE02/Debrief04",
                             ContentAddressableKey: keri_teaching,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTES08/Debrief05",
+                            LocKey: "Missions/Secondary/MTE02/Debrief05",
                             ContentAddressableKey: keri_teaching,
                         }
                     ];
@@ -2230,6 +2229,12 @@
                 EventTypeOnClosed: get-message(SpawnTriumphWindow);
                 StageEvent: Play_mission_alert_secondary;
             }
+        }
+        +OnSubmit {
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Primary_MTE03_Duna_Flyby;
+				MissionOwner: Agency;
+			}
         }
     }
     MissionSaveAssetKey: "";
