@@ -109,7 +109,7 @@
 // removes Keostationnary Orbit from Bad Signal and adds Picnic at Teetering Rock instead
             * > ActivateMissionAction {
                 @if $$TargetMissionID == KSP2Mission_Secondary_Kerbin_OrbitKeostationary {
-                    TargetMissionID: MTE_Secondary_MTES09_Picnic_Teetering_Rock;
+                    @delete;
                 }
             }
 // adds I, P.A.I.G.E. as a child of Bad Signal
@@ -137,12 +137,17 @@
                 TargetMissionID: MTE_Secondary_Kerbin_KerbinTourSOI;
                 MissionOwner: Agency;
             }
+// adds Picnic at Teetering Rock as a child of Minmus Monument
+            +ActivateMissionAction {
+                TargetMissionID: MTE_Secondary_MTES09_Picnic_Teetering_Rock;
+                MissionOwner: Agency;
+            }
+        }
 // adds xxxx as a child of Minmus Monument
             +ActivateMissionAction {
                 TargetMissionID: MTE_Secondary_MTES10_Gound_Station_Monument;
                 MissionOwner: Agency;
             }
-        }
     }
 
     #Main_Duna_01 {
