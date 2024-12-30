@@ -3148,3 +3148,120 @@
     }
     MissionSaveAssetKey: "";
 }
+
+// The Outpost
+@new(MTE_Secondary_MTES10_Gound_Station_Monument)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/MTES10/Name";
+    description: "Missions/Secondary/MTES10/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/MTES10/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselResearchLocation);
+                    TestWatchedstring: Minmus_Landed_MinmusMonument;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasPart);
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: "cabin_2v_crew_hitchhiker";
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasPart);
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: "antenna_0v_dish_ra-15";
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasPartInGroup);
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: "0540-Light";
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(CrewCount);
+                    TestWatchedInt: 5;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 750.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_secondary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterKSC;
+    TriumphLoopVideoKey: TriumphAnimation_Minmus;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_happy;
+                * > Dialogs {
+                    Entries: [
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES10/Debrief01",
+                            ContentAddressableKey: keri_happy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES10/Debrief02",
+                            ContentAddressableKey: keri_happy,
+                        },
+                        {
+                            ShowsInHistory: true,
+                            DialogEntryType: Text,
+                            LocKey: "Missions/Secondary/MTES10/Debrief03",
+                            ContentAddressableKey: keri_happy,
+                        }
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_secondary;
+            }
+        }
+    }
+    MissionSaveAssetKey: "";
+}

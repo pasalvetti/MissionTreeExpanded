@@ -300,3 +300,30 @@ Missions/Secondary/MTES14/Debrief03,Text,,"They’re now fully qualified Kerbona
 
 
 
+
+
+
+
+Missions/Secondary/MTES10/Name,Text,,"The Outpost"
+Missions/Secondary/MTES10/Description,Text,,"The discovery of that monument on Minmus has generated a huge amount of public interest. Everyone’s talking about Kerbina, the Builders, and what it all means. Management wants to capitalize on this excitement and show the public that we’re taking this seriously. They want a visible, tangible demonstration of our commitment to understanding this mystery.
+
+And that, Director, means establishing a permanent outpost on Minmus, right near the monument. A place where our scientists can conduct in-depth research and analyze the monument firsthand.
+
+This outpost must be designed to accommodate a crew of five Kerbals, allowing for extended research stays. To meet the minimum requirements, the outpost must include:
+
+At least one “Hitchhiker” crew cabin to provide living space.
+
+A RA-15 antenna for reliable communication with Kerbin.
+
+Sufficient lighting to illuminate the area around the outpost, especially at night. We don't want our scientists tripping over any minty rocks.
+
+Also, make sure the outpost is visually impressive for any future… <i>publicity photos</i>.
+
+This mission is about more than just science, it’s about demonstrating our dedication to exploring the unknown. Plus, having a permanent base on Minmus is just plain cool."
+Missions/Secondary/MTES10/Objective,Text,,"Establish an outpost on the surface of Minmus within close proximity to the monument, with five Kerbals, a “Hitchhiker” crew cabin, a RA-15 antenna and some lights."
+Missions/Secondary/MTES10/Debrief01,Text,,"Well done! This outpost is a shining beacon of Kerbal ingenuity on the minty plains of <style=""OBJ-Minmus"">Minmus</style>! I’ve got to admit, your design for this outpost is <i>out of this world</i>."
+Missions/Secondary/MTES10/Debrief02,Text,,"The crew have already set up a small observation platform overlooking the monument, which they’ve affectionately nicknamed “The Squid Mouth View.”"
+Missions/Secondary/MTES10/Debrief03,Text,,"Management is now talking about adding a gift shop. I’m not sure about that one, but… you know how Management can be."
+
+
+
