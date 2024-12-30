@@ -130,6 +130,13 @@
         }
     }
 
+// increases science reward amount (originally 35)
+    #KSP2Mission_Secondary_Minmus_LandHeavy {
+		* > missionStages > _15 > MissionReward > SciencePoints {
+			RewardAmount: 400.0;
+		}
+    }
+
     #Main_Minmus_01 {
         * > ContentBranches > OnSubmit {
 // adds Sightseeing as a child of Minmus Monument
@@ -2654,7 +2661,7 @@
             Objective: "";
             * > MissionReward {
                 +SciencePoints {
-                    RewardAmount: 750.0;
+                    RewardAmount: 900.0;
                 }
             }
             * > actions {
