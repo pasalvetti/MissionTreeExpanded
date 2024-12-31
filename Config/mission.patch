@@ -2075,17 +2075,17 @@
 @new(MTE_Primary_MTE02_Munar_Gateway)
 :missions {
     MissionGroup: "";
-    name: "Missions/Secondary/MTE02/Name";
-    description: "Missions/Secondary/MTE02/Description";
+    name: "Missions/Primary/MTE02/Name";
+    description: "Missions/Primary/MTE02/Description";
     GameModeFeatureId: ExplorationMissions;
-    type: Secondary;
+    type: Primary;
     Owner: Agency;
     state: Inactive;
     * > missionStages {
         +_0 {
             name: Check;
             description: "";
-            Objective: "Missions/Secondary/MTE02/Objective";
+            Objective: "Missions/Primary/MTE02/Objective";
             MissionRewardType: None;
             DisplayObjective: true;
             +ConditionSet {
@@ -2146,7 +2146,7 @@
             * > actions {
                 +MissionResolutionAction {
                     MissionResolution: Complete;
-                    StageEvent: Play_mission_alert_secondary;
+                    StageEvent: Play_mission_alert_primary;
                 }
             }
             IgnoreExceptionBranches: true;
@@ -2170,25 +2170,25 @@
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTE02/Brief01",
+                            LocKey: "Missions/Primary/MTE02/Brief01",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTE02/Brief02",
+                            LocKey: "Missions/Primary/MTE02/Brief02",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTE02/Brief03",
+                            LocKey: "Missions/Primary/MTE02/Brief03",
                             ContentAddressableKey: keri_joy,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTE02/Brief04",
+                            LocKey: "Missions/Primary/MTE02/Brief04",
                             ContentAddressableKey: keri_joy,
                         }
                     ];
@@ -2204,37 +2204,37 @@
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTE02/Debrief01",
+                            LocKey: "Missions/Primary/MTE02/Debrief01",
                             ContentAddressableKey: keri_teaching,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTE02/Debrief02",
+                            LocKey: "Missions/Primary/MTE02/Debrief02",
                             ContentAddressableKey: keri_teaching,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTE02/Debrief03",
+                            LocKey: "Missions/Primary/MTE02/Debrief03",
                             ContentAddressableKey: keri_teaching,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTE02/Debrief04",
+                            LocKey: "Missions/Primary/MTE02/Debrief04",
                             ContentAddressableKey: keri_teaching,
                         },
                         {
                             ShowsInHistory: true,
                             DialogEntryType: Text,
-                            LocKey: "Missions/Secondary/MTE02/Debrief05",
+                            LocKey: "Missions/Primary/MTE02/Debrief05",
                             ContentAddressableKey: keri_teaching,
                         }
                     ];
                 }
                 EventTypeOnClosed: get-message(SpawnTriumphWindow);
-                StageEvent: Play_mission_alert_secondary;
+                StageEvent: Play_mission_alert_primary;
             }
         }
         +OnSubmit {
