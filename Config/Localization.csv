@@ -56,6 +56,42 @@ Missions/Primary/MTE02/Debrief05,Text,,"This is a new direction for our research
 
 
 
+
+Missions/Primary/MTE03/Name,Text,,"Following the Path"
+Missions/Primary/MTE03/Description,Text,,"Analysis of the Minmus signal prompts us to turn our attention to the outer solar system. We will need to gain experience and launch our first missions into deep space!"
+Missions/Primary/MTE03/Objective,Text,,"Perform a flyby of Duna."
+
+Missions/Primary/MTE03/Brief01,Text,,"Good morning, Director. Please, help yoursef. Croissants, muffins, danishes…"
+Missions/Primary/MTE03/Brief02,Text,,"Yes, yes, I know what you’re thinking. “Dr. Kerman, bringing breakfast? What’s going on?” Well… let’s just say I learned a valuable lesson about locking my computer when I step away from my station. Some mischievous individual decided to send an email to the entire <style=""KSC-Mission-Control"">Mission Control</style> staff announcing that I would be providing breakfast this morning. I simply couldn’t face the embarrassment of not following through. I suspect Newton of this misdeed."
+Missions/Primary/MTE03/Brief03,Text,,"Now, onto more pressing matters. The analysis of the signal from the <style=""OBJ-Minmus"">Minmus</style> monument has yielded some interesting results. Just like the signal from the <style=""OBJ-Mun"">Mun</style>ar monument, the signal strength isn’t uniform. It seems to be directed outwards, towards the outer planets. We think it is directed towards <style=""OBJ-Duna"">Duna</style>."
+Missions/Primary/MTE03/Brief04,Text,,"<style=""OBJ-Duna"">Duna</style> is the fourth planet in the <style=""OBJ-Kerbol"">Kerbol</style>lar System.
+It’s a little bigger than the <style=""OBJ-Mun"">Mun</style>, and has its very own moon, <style=""OBJ-Ike"">Ike</style>!"
+Missions/Primary/MTE03/Brief05,Text,,"It’s as if these monuments aren't just communicating with each other, but also with… something much further out. This is becoming increasingly complex. It’s like trying to listen to a conversation happening across the solar system!
+
+We need to get a closer look at <style=""OBJ-Duna"">Duna</style>, to try and see if there’s something there to receive the signal.
+
+<style="TXT-Objective">Your objective is to perform a flyby of <style=""OBJ-Duna"">Duna</style>.</style>"
+Missions/Primary/MTE03/Brief06,Text,,"To get to <style=""OBJ-Duna"">Duna</style>, <style=""TXT-Bold"">you’re going to need a large, multi-stage rocket with plenty of fuel.</style>.
+Use the <style=""App-Trip-Planner"">Trip Planner</style> in the VAB to make sure you have enough Delta-V to make the whole trip. You'll also need to time your departure so that the positions of <style=""OBJ-Kerbin"">Kerbin</style> and <style=""OBJ-Duna"">Duna</style> are correct.
+You'll want to <style=""App-Time-Warp"">Time Warp</style> until <style=""OBJ-Kerbin"">Kerbin</style> and <style=""OBJ-Duna"">Duna</style> are 45 degrees apart, with <style=""OBJ-Duna"">Duna</style> in the lead. Just whip out your protractor and place <style=""OBJ-Kerbol"">Kerbol</style> and <style=""OBJ-Kerbin"">Kerbin</style> on the baseline.
+If you don't have a protractor, I can recommend my top five!"
+Missions/Primary/MTE03/Brief07,Text,,"This mission will require a powerful antenna to maintain contact over such vast distances. The RA-15 antenna will suffice if <style=""OBJ-Duna"">Duna</style> is relatively close to <style=""OBJ-Kerbin"">Kerbin</style>. However, to ensure continuous communication throughout <style=""OBJ-Duna"">Duna</style>'s orbit, we'll need something with a bit more reach. I recommend equipping your probe with the HG-55. This will allow us to maintain a stable connection regardless of <style=""OBJ-Duna"">Duna</style>'s position."
+Missions/Primary/MTE03/Brief08,Text,,"Good luck, Director! And… enjoy the pastries. Better not trying to decipher alien transmissions on an empty stomach."
+
+Missions/Primary/MTE03/Debrief01,Text,,"Congratulations for this first mission into deep space, Director! I must commend you as <style=""OBJ-Duna"">Duna</style> can be quite… <i>distracting</i> with its reddish hues and intriguing canyons. It’s easy to get sidetracked by the scenery."
+Missions/Primary/MTE03/Debrief02,Text,,"Unfortunately, the probe didn’t detect any new signals emanating from <style=""OBJ-Duna"">Duna</style>. .Just the background noise of the cosmos. Communication with the probe was also a bit spotty. We experienced some intermittent signal loss. Are there <i>gremlins</i> in space? We’ll need to investigate that further."
+Missions/Primary/MTE03/Debrief03,Text,,"But the most puzzling discovery came not from the signal, but from the observation of <style=""OBJ-Duna"">Duna</style> and its moon, <style=""OBJ-Ike"">Ike</style>. Our scientists have been analyzing the orbital data, and they’ve encountered something… <i>anomalous</i>."
+Missions/Primary/MTE03/Debrief04,Text,,"The <style=""OBJ-Duna"">Duna</style>-<style=""OBJ-Ike"">Ike</style> system… it doesn’t seem to be entirely stable. <style=""OBJ-Ike"">Ike</style> is too massive. It’s as if some unseen force is holding them together, preventing them from drifting apart or colliding. They are locked in a strange dance, a dance that defies our current understanding of orbital mechanics. Is it some unknown gravitational phenomenon? Or could it be… something else?"
+Missions/Primary/MTE03/Debrief05,Text,,"We now have two mysteries to unravel. The cosmos, it seems, is full of surprises. And we’re just getting started."
+
+
+
+
+
+
+
+
+
 Missions/Secondary/MTES01/Name,Text,,"The Ice Spy"
 Missions/Secondary/MTES01/Description,Text,,"What does the North Pole look like exactly? Time to find out!"
 Missions/Secondary/MTES01/Objective,Text,,"Achieve an orbit around Kerbin with a 90 degree inclinaison."
