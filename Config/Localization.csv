@@ -46,7 +46,7 @@ Missions/Primary/MTE02/Brief04,Text,,"I promise if you manage to pull this off I
 
 Missions/Primary/MTE02/Debrief01,Text,,"Well done! About that… <i>trumpet</i> thing I mentioned earlier… let’s just… forget about that. I was clearly lacking caffeine. The trombone is enough, I think you’ll agree."
 Missions/Primary/MTE02/Debrief02,Text,,"Anyway, have you heard the news, Director? The team at the station made a significant discovery. The signal strength from the <style=""OBJ-Mun"">Mun</style>ar monument… it’s not uniform. It is strongest towards… <style=""OBJ-Minmus"">Minmus</style>."
-Missions/Primary/MTE02/Debrief03,Text,,"It’s as if the signal isn’t directed at <style=""OBJ-Kerbin"">Kerbin</style> at all, but at <style=""OBJ-Minmus"">Minmus</style>. As if the two moons are somehow… connected. This adds a whole new layer to the mystery. Why would this monument be transmitting a signal towards our smaller moon?"
+Missions/Primary/MTE02/Debrief03,Text,,"It’s as if the signal isn’t directed at <style=""OBJ-Kerbin"">Kerbin</style> at all, but at <style=""OBJ-Minmus"">Minmus</style>. We can assume it is directed at the <style=""OBJ-Minmus"">Minmus</style> monument, as if the two are somehow… connected. This adds a whole new layer to the mystery. Why would this monument be transmitting a signal towards our smaller moon?"
 Missions/Primary/MTE02/Debrief04,Text,,"I don’t know about you, but I’ve never eavesdrop on a conversation between two celestial bodies before!"
 Missions/Primary/MTE02/Debrief05,Text,,"This is a new direction for our research, and I have a feeling… this is just the beginning."
 
