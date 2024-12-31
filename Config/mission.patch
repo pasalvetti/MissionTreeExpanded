@@ -2421,7 +2421,7 @@
             Objective: "";
             * > MissionReward {
                 +SciencePoints {
-                    RewardAmount: 400.0;
+                    RewardAmount: 750.0;
                 }
             }
             * > actions {
