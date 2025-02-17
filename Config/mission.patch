@@ -2,16 +2,6 @@
 
 // modifications to stock missions
 :missions {
-    #Main_Kerbin_01 {
-        * > ContentBranches > OnSubmit {
-// unlocks Dress Rehearsal
-			+ActivateMissionAction {
-				TargetMissionID: MTE_Secondary_Kerbin_EVAGround;
-				MissionOwner: Agency;
-			}
-		}
-    }
-
     #Main_Kerbin_02 {
         * > ContentBranches > OnSubmit {
 // unlocks Survival Training, I
