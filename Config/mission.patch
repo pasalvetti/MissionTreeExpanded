@@ -426,7 +426,7 @@
     currentStageIndex: 0;
     Hidden: false;
     MissionGranterKey: MissionGranterKSC;
-    TriumphLoopVideoKey: TriumphAnimation_Mun_V1;
+    TriumphLoopVideoKey: TriumphAnimation_PM04;
     VisibleRewards: true;
     pendingCompletionTest: false;
     maxStageID: 2;
