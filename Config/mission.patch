@@ -3224,8 +3224,8 @@
             +ConditionSet {
                 +PropertyCondition {
                     RequireCurrentValue: true;
-                    PropertyTypeAQN: get-property-watcher(HasBeenToResearchLocation);
-                    TestWatchedstring: "Kerbin_Landed_KerbinMountain";
+                    PropertyTypeAQN: get-property-watcher(VesselResearchLocation);
+                    TestWatchedstring: Kerbin_Landed_KerbinMountain;
                     propOperator: EQUAL;
                     isInput: false;
                 }
@@ -3248,7 +3248,7 @@
             Objective: "";
             * > MissionReward {
                 +SciencePoints {
-                    RewardAmount: 50.0;
+                    RewardAmount: 70.0;
                 }
             }
             * > actions {
