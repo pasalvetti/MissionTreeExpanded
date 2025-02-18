@@ -3119,8 +3119,8 @@
             +ConditionSet {
                 +PropertyCondition {
                     RequireCurrentValue: true;
-                    PropertyTypeAQN: get-property-watcher(HasBeenToResearchLocation);
-                    TestWatchedstring: "Kerbin_Landed_KerbinDesert";
+                    PropertyTypeAQN: get-property-watcher(VesselResearchLocation);
+                    TestWatchedstring: Kerbin_Landed_KerbinDesert;
                     propOperator: EQUAL;
                     isInput: false;
                 }
