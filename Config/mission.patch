@@ -531,7 +531,7 @@
         +_0 {
             name: Check;
             description: "";
-            Objective: "Missions/Secondary/Kerbin_Plane/Objective";
+            Objective: "Missions/Secondary/Kerbin_Plane/Objective2";
             MissionRewardType: None;
             DisplayObjective: true;
             +ConditionSet {
@@ -544,8 +544,8 @@
                 }
                 +PropertyCondition {
                     RequireCurrentValue: true;
-                    PropertyTypeAQN: get-property-watcher(VesselSeaLevelAltitudePropertyWatcher);
-                    TestWatchedValue: 100.0;
+                    PropertyTypeAQN: get-property-watcher(MaxGroundAltitudeReached);
+                    TestWatchedValue: 500.0;
                     propOperator: GREATER;
                     isInput: false;
                 }
