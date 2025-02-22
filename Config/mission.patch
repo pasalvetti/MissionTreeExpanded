@@ -643,7 +643,7 @@
         +_0 {
             name: Check;
             description: "";
-            Objective: "Missions/Secondary/MTES15/Objective2";
+            Objective: "Missions/Secondary/MTES15/Objective";
             MissionRewardType: None;
             DisplayObjective: true;
             +ConditionSet {
@@ -674,9 +674,6 @@
                     propOperator: EQUAL;
                     isInput: true;
                     Inputstring: "0120-Jet Engine";
-                }
-                +EventCondition {
-                    EventTypeAQN: get-message(VesselLandedGroundAtRestMessage);
                 }
                 ConditionMode: AND;
             }
