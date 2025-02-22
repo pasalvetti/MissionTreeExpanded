@@ -745,6 +745,109 @@
     MissionSaveAssetKey: "";
 }
 
+// Go High
+@new(MTE_Secondary_MTES16_Go_High)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/MTES16/Name";
+    description: "Missions/Secondary/MTES16/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/MTES16/Objective";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+				+PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Kerbin;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselGroundLevelAltitudePropertyWatcher);
+                    TestWatchedValue: 12000.0;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasPartInGroup);
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: "0120-Jet Engine";
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 100.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_primary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterC7;
+    TriumphLoopVideoKey: reward_mission_tier1;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_neutral;
+                * > Dialogs {
+                    Entries: [
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/MTES16/Debrief01",
+						ContentAddressableKey: keri_neutral,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/MTES16/Debrief02",
+						ContentAddressableKey: keri_neutral,
+					}
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_primary_returned_to_missionControl;
+            }
+        }
+        +OnSubmit {
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_MTES17_Go_Far;
+				MissionOwner: Agency;
+			}
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
 // Disco Party
 @new(MTE_Secondary_Mun_OrbitInclination)
 :missions {
