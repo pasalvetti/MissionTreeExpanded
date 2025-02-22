@@ -368,3 +368,22 @@ Missions/Secondary/MTES10/Debrief03,Text,,"Management is now talking about addin
 
 
 Missions/Secondary/Kerbin_Plane/Objective2,Text,,"Land a vessel that uses jet engines after reaching at least 500m."
+
+
+
+
+
+
+Missions/Secondary/MTES15/Name,Text,,"Go Fast"
+Missions/Secondary/MTES15/Description,Text,,"C7 Aerospace Division has sent us some of their old records, challenging us to beat them. Let’s just say they’re ripe for the breaking. We’ve been so focused on reaching the stars, we’ve neglected the good old-fashioned thrill of… <i>speed</i>. Specifically, we’re talking about the Kerbin atmospheric speed record. A paltry 400 meters per second. That’s frankly, embarrassing! We can do better. Much better.
+
+This isn’t just about going fast. It’s about pushing the boundaries of Kerbal engineering. It’s about proving that Kerbals can conquer any challenge, whether it’s in the depths of space or the skies above Kerbin."
+Missions/Secondary/MTES15/Objective,Text,,"Go faster than 400 m/s with jet engines while being below 500m sea level."
+
+Missions/Secondary/MTES15/Debrief01,Text,,"Great! You absolutely shattered the <style=""OBJ-Kerbin"">Kerbin</style> atmospheric speed record!"
+Missions/Secondary/MTES15/Debrief02,Text,,"You made those old 400 m/s records look like they were set by a slow-moving cloud!"
+Missions/Secondary/MTES15/Debrief03,Text,,"You know, with that kind of speed, I could probably cut my commute time in half. Imagine, arriving at <style=""KSC-Mission-Control"">Mission Control</style> before the coffee gets cold. Now <i>that</i> would be a record worth breaking!"
+
+
+
+

@@ -619,6 +619,131 @@
                 StageEvent: Play_mission_alert_primary_returned_to_missionControl;
             }
         }
+        +OnSubmit {
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_MTES15_Go_Fast;
+				MissionOwner: Agency;
+			}
+        }
+    }
+    MissionSaveAssetKey: "";
+}
+
+// Go Fast
+@new(MTE_Secondary_MTES15_Go_Fast)
+:missions {
+    MissionGroup: "";
+    name: "Missions/Secondary/MTES15/Name";
+    description: "Missions/Secondary/MTES15/Description";
+    GameModeFeatureId: ExplorationMissions;
+    type: Secondary;
+    Owner: Agency;
+    state: Inactive;
+    * > missionStages {
+        +_0 {
+            name: Check;
+            description: "";
+            Objective: "Missions/Secondary/MTES15/Objective2";
+            MissionRewardType: None;
+            DisplayObjective: true;
+            +ConditionSet {
+				+PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSOIPropertyWatcher);
+                    TestWatchedstring: Kerbin;
+                    propOperator: EQUAL;
+                    isInput: false;
+                }
+                PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselGroundLevelAltitudePropertyWatcher);
+                    TestWatchedValue: 500.0;
+                    propOperator: LESSER;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(VesselSurfaceSpeedPropertyWatcher);
+                    TestWatchedValue: 400.0;
+                    propOperator: GREATER;
+                    isInput: false;
+                }
+                +PropertyCondition {
+                    RequireCurrentValue: true;
+                    PropertyTypeAQN: get-property-watcher(HasPartInGroup);
+                    propOperator: EQUAL;
+                    isInput: true;
+                    Inputstring: "0120-Jet Engine";
+                }
+                +EventCondition {
+                    EventTypeAQN: get-message(VesselLandedGroundAtRestMessage);
+                }
+                ConditionMode: AND;
+            }
+        }
+        +_1 {
+            name: "Mission Complete";
+            description: "";
+            Objective: "";
+            * > MissionReward {
+                +SciencePoints {
+                    RewardAmount: 100.0;
+                }
+            }
+            * > actions {
+                +MissionResolutionAction {
+                    MissionResolution: Complete;
+                    StageEvent: Play_mission_alert_primary;
+                }
+            }
+            IgnoreExceptionBranches: true;
+        }
+    }
+    currentStageIndex: 0;
+    Hidden: false;
+    MissionGranterKey: MissionGranterC7;
+    TriumphLoopVideoKey: reward_mission_tier1;
+    VisibleRewards: true;
+    pendingCompletionTest: false;
+    maxStageID: 2;
+    uiDisplayType: Default;
+    * > ContentBranches {
+		+Debrief {
+            +MissionCharacterDialogAction {
+                CharacterNameLocKey: "Missions/CharacterName/Keri";
+                CharacterIconKey: keri_thinking;
+                * > Dialogs {
+                    Entries: [
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/MTES15/Debrief01",
+						ContentAddressableKey: keri_thinking,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/MTES15/Debrief02",
+						ContentAddressableKey: keri_thinking,
+					},
+					{
+						ShowsInHistory: true,
+						DialogEntryType: Text,
+						LocKey: "Missions/Secondary/MTES15/Debrief03",
+						ContentAddressableKey: keri_thinking,
+					},
+                    ];
+                }
+                EventTypeOnClosed: get-message(SpawnTriumphWindow);
+                StageEvent: Play_mission_alert_primary_returned_to_missionControl;
+            }
+        }
+        +OnSubmit {
+			+ActivateMissionAction {
+				TargetMissionID: MTE_Secondary_MTES16_Go_High;
+				MissionOwner: Agency;
+			}
+        }
     }
     MissionSaveAssetKey: "";
 }
