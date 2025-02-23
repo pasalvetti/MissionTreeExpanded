@@ -654,7 +654,7 @@
                     propOperator: EQUAL;
                     isInput: false;
                 }
-                PropertyCondition {
+                +PropertyCondition {
                     RequireCurrentValue: true;
                     PropertyTypeAQN: get-property-watcher(VesselGroundLevelAltitudePropertyWatcher);
                     TestWatchedValue: 500.0;
@@ -770,10 +770,10 @@
                     propOperator: EQUAL;
                     isInput: false;
                 }
-                PropertyCondition {
+                +PropertyCondition {
                     RequireCurrentValue: true;
                     PropertyTypeAQN: get-property-watcher(VesselGroundLevelAltitudePropertyWatcher);
-                    TestWatchedValue: 12000.0;
+                    TestWatchedValue: 7000.0;
                     propOperator: GREATER;
                     isInput: false;
                 }
