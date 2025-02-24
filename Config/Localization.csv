@@ -392,10 +392,10 @@ Missions/Secondary/MTES15/Debrief03,Text,,"You know, with that kind of speed, I 
 
 
 Missions/Secondary/MTES16/Name,Text,,"Go High"
-Missions/Secondary/MTES16/Description,Text,,"We’ve received a new request from C7 Aerospace Division. They want to test their engine performance at high altitudes, specifically, by reaching an altitude of 7 kilometers above sea level. We need to make sure the engine gets enough fuel, because if we run out, we are going to have a bad time."
-Missions/Secondary/MTES16/Objective,Text,,"Reach an altitude of 7 km above sea level with a jet engine."
+Missions/Secondary/MTES16/Description,Text,,"We’ve received a new request from C7 Aerospace Division. They want to test their engine performance at high altitudes, specifically, by reaching an altitude of 20 kilometers above sea level. We need to make sure the engine gets enough fuel, because if we run out, we are going to have a bad time."
+Missions/Secondary/MTES16/Objective,Text,,"Reach an altitude of 20 km above sea level with a jet engine."
 
-Missions/Secondary/MTES16/Debrief01,Text,,"Congratulaltions on reaching new heights, Director! You’ve proven that Kerbal engineering, combined with skilled piloting, can achieve remarkable feats."
+Missions/Secondary/MTES16/Debrief01,Text,,"Congratulations on reaching new heights, Director! You’ve proven that Kerbal engineering, combined with skilled piloting, can achieve remarkable feats."
 Missions/Secondary/MTES16/Debrief02,Text,,"Who knows, maybe we can even use it to build a plane that can reach space! Now that would be something."
 
 
