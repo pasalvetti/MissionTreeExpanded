@@ -139,16 +139,16 @@
                 TargetMissionID: MTE_Secondary_MTES09_Picnic_Teetering_Rock;
                 MissionOwner: Agency;
             }
-        }
 // adds xxxx as a child of Minmus Monument
-        +ActivateMissionAction {
-            TargetMissionID: MTE_Secondary_MTES10_Gound_Station_Monument;
-            MissionOwner: Agency;
-        }
+            +ActivateMissionAction {
+                TargetMissionID: MTE_Secondary_MTES10_Gound_Station_Monument;
+                MissionOwner: Agency;
+            }
 // adds Celestial Dialogue as a child of Minmus Monument
-        +ActivateMissionAction {
-            TargetMissionID: MTE_Primary_MTE02_Munar_Gateway;
-            MissionOwner: Agency;
+            +ActivateMissionAction {
+                TargetMissionID: MTE_Primary_MTE02_Munar_Gateway;
+                MissionOwner: Agency;
+            }
         }
     }
 
