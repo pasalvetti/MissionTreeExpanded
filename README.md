@@ -9,7 +9,7 @@ The diagram below shows the game's mission tree, with the new missions offered b
 
 ![KSP2 Mission Tree](https://github.com/pasalvetti/MissionTreeExpanded/blob/main/Communication/Promo02.png?raw=true)
 
-![Mission example](https://github.com/pasalvetti/MissionTreeExpanded/blob/main/Communication/Promo02.png?raw=true)
+![Mission example](https://github.com/pasalvetti/MissionTreeExpanded/blob/main/Communication/Promo03.png?raw=true)
 
 ![Mission example](https://github.com/pasalvetti/MissionTreeExpanded/blob/main/Communication/Promo01.png?raw=true)
 
