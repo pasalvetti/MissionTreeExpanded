@@ -19,7 +19,7 @@ The diagram below shows the game's mission tree, with the new missions offered b
 1. Open the game folder by right-clicking on the game in your Steam library, selecting "Manage," and then clicking "Browse local files."
 2. Install the [Space Warp + BepinEx plugin](https://spacedock.info/mod/3277/Space%20Warp%20+%20BepInEx) (available on CKAN).
 3. Install the [Patch Manager plugin](https://spacedock.info/mod/3482/Patch%20Manager) (available on CKAN).
-4. Download the latest version of this mod, either on [GitHub](https://github.com/pasalvetti/MissionTreeExpanded/releases) or on [Spacedock](https://spacedock.info/mod/xxx).
+4. Download the latest version of this mod, either on [GitHub](https://github.com/pasalvetti/MissionTreeExpanded/releases) or on [Spacedock](https://spacedock.info/mod/3831/Mission%20Tree%20Expanded).
 5. Open the zip file and drag the included BepInEx folder into the game folder (merge folders when asked).
 
 ## Dependencies
@@ -28,8 +28,8 @@ The diagram below shows the game's mission tree, with the new missions offered b
 [Patch Manager](https://spacedock.info/mod/3482/Patch%20Manager)
 
 ## Links
-Spacedock: https://spacedock.info/mod/xxx
+Spacedock: [https://spacedock.info/mod/3831/Mission%20Tree%20Expanded](https://spacedock.info/mod/3831/Mission%20Tree%20Expanded)
 
-Contact: [KSP 2 Modding Society](https://discord.com/channels/xxx)
+Contact: [KSP 2 Modding Society]([https://discord.com/channels/xxx](https://discord.com/channels/1078696971088433153/1345470974736208003))
 
-Forum: https://forum.kerbalspaceprogram.com/topic/xxx
+Forum: [https://forum.kerbalspaceprogram.com/topic/227017-mission-tree-expanded-010-for-ksp2-0220/](https://forum.kerbalspaceprogram.com/topic/227017-mission-tree-expanded-010-for-ksp2-0220/)
