@@ -98,7 +98,7 @@ Missions/Secondary/MTES01/Objective,Text,,"Achieve an orbit around Kerbin with a
 
 Missions/Secondary/MTES01/Brief01,Text,,"Director, I've been doing some… <i>very</i> important research here at <style=""KSC-Mission-Control"">Mission Control</style>. Specifically, I've been staring at maps of <style=""OBJ-Kerbin"">Kerbin</style>. And I've noticed something… peculiar."
 Missions/Secondary/MTES01/Brief02,Text,,"The North Pole."
-Missions/Secondary/MTES01/Brief03,Text,,"It's just… there. All snowy and… whity. We know very little about its composition. How big is it? What is it temperature? Is it made of sugar?"
+Missions/Secondary/MTES01/Brief03,Text,,"It's just… there. All snowy and… whity. We know very little about its composition. How big is it? What is its temperature? Is it made of sugar?"
 Missions/Secondary/MTES01/Brief04,Text,,"So, I’ve devised a new mission, one that will strengthen our scientific knowledge. You need to fly over the North Pole so that we can have a look at the situation. A <i>polar</i> orbit, you ask? Yes!
 <style="TXT-Objective">Achieve an orbit around <style=""OBJ-Kerbin"">Kerbin</style> with a 90 degree inclinaison.</style>"
 Missions/Secondary/MTES01/Brief05,Text,,"Good luck, and don’t do anything… <i>polarizing</i>!"
