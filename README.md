@@ -1,9 +1,9 @@
 # Mission Tree Expanded
 _A mod for Kerbal Space Program 2 adding two dozen new missions._
 
-This mod aims to enrich the mission tree as well as smooth out the difficulty of progressing from one primary mission to another by adding intermediate steps. The stock game expects you to go into orbit around the Mun immediately after reaching Kerbin orbit, as well as to land on Duna immediately after landing on Minmus. Adding additional missions helps better guide new players.
+This mod aims to enrich the mission tree as well as smooth out the difficulty of progressing from one primary mission to another by adding intermediate steps when necessary. The stock game expects you to go into orbit around the Mun immediately after reaching Kerbin orbit, as well as to land on Duna immediately after landing on Minmus. Adding additional missions helps better guide new players.
 
-In addition, a dozen new secondary missions are proposed to encourage the player to further explore each visited planet (for example, by using the Discoverables system) or to achieve feats that are not required in the stock game (building a space station, entering polar orbit, etc.).
+In addition, a dozen new secondary missions are proposed to encourage the player to further explore each visited planet (for example, by leading the player to Discoverables location) or to achieve feats that are not required in the stock game (building a space station, entering polar orbit, etc.).
 
 The diagram below shows the game's mission tree, with the new missions offered by this mod highlighted in color.
 
