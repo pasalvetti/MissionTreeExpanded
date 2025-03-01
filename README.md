@@ -13,6 +13,8 @@ The diagram below shows the game's mission tree, with the new missions offered b
 
 ![Mission example](https://github.com/pasalvetti/MissionTreeExpanded/blob/main/Communication/Promo01.png?raw=true)
 
+![Mission example](https://github.com/pasalvetti/MissionTreeExpanded/blob/main/Communication/Promo04.png?raw=true)
+
 ## Installation
 1. Open the game folder by right-clicking on the game in your Steam library, selecting "Manage," and then clicking "Browse local files."
 2. Install the [Space Warp + BepinEx plugin](https://spacedock.info/mod/3277/Space%20Warp%20+%20BepInEx) (available on CKAN).
