@@ -103,10 +103,10 @@ Missions/Secondary/MTES01/Brief04,Text,,"So, I’ve devised a new mission, one t
 <style="TXT-Objective">Achieve an orbit around <style=""OBJ-Kerbin"">Kerbin</style> with a 90 degree inclinaison.</style>"
 Missions/Secondary/MTES01/Brief05,Text,,"Good luck, and don’t do anything… <i>polarizing</i>!"
 
-Missions/Secondary/MTES01/Brief01,Text,,"By my stars, the pictures you sent us confirmed what I suspected all along! The North Pole is a vast expanse of frozen water! Not sugar, as some… <i>less informed</i> individuals might have speculated. Which is fine, I never put sugar in my coffee. It’s a great day for accurate cartography!"
-Missions/Secondary/MTES01/Brief02,Text,,"You’ve proven that you can handle even the most demanding orbital maneuvers, Director. A polar orbit is no small feat!"
-Missions/Secondary/MTES01/Brief03,Text,,"Now, this has given me an idea. These images are just a starting point. We’ve only scratched the surface, so to speak. There’s so much more to learn about the polar regions. The ice thickness, the underlying geology, the atmospheric conditions… it’s a treasure trove of scientific data waiting to be uncovered."
-Missions/Secondary/MTES01/Brief04,Text,,"Come back in a few while I set up a new mission!"
+Missions/Secondary/MTES01/Debrief01,Text,,"By my stars, the pictures you sent us confirmed what I suspected all along! The North Pole is a vast expanse of frozen water! Not sugar, as some… <i>less informed</i> individuals might have speculated. Which is fine, I never put sugar in my coffee. It’s a great day for accurate cartography!"
+Missions/Secondary/MTES01/Debrief02,Text,,"You’ve proven that you can handle even the most demanding orbital maneuvers, Director. A polar orbit is no small feat!"
+Missions/Secondary/MTES01/Debrief03,Text,,"Now, this has given me an idea. These images are just a starting point. We’ve only scratched the surface, so to speak. There’s so much more to learn about the polar regions. The ice thickness, the underlying geology, the atmospheric conditions… it’s a treasure trove of scientific data waiting to be uncovered."
+Missions/Secondary/MTES01/Debrief04,Text,,"Come back in a few while I set up a new mission!"
 
 
 
