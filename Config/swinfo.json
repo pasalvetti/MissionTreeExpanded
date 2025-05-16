@@ -6,7 +6,7 @@
   "description": "A mod for Kerbal Space Program 2 adding two dozen new missions.",
   "source": "https://github.com/pasalvetti/MissionTreeExpanded",
   "version": "0.2",
-  "version_check": "",
+  "version_check": "https://raw.githubusercontent.com/pasalvetti/MissionTreeExpanded/refs/heads/main/Config/swinfo.json",
   "ksp2_version": {
     "min": "0.2.2",
     "max": "*"
