@@ -1,0 +1,185 @@
+{
+  "ID": "MTE_Secondary_MTES15_Go_Fast",
+  "MissionGroup": "",
+  "name": "Missions/Secondary/MTES15/Name",
+  "description": "Missions/Secondary/MTES15/Description",
+  "GameModeFeatureId": "ExplorationMissions",
+  "type": "Secondary",
+  "Owner": "Agency",
+  "state": "Inactive",
+  "missionScript": "",
+  "missionStages": [
+    {
+      "StageID": 0,
+      "name": "Check",
+      "description": "",
+      "Objective": "Missions/Secondary/MTES15/Objective",
+      "DisplayObjective": true,
+      "RevealObjectiveOnActivate": false,
+      "MissionRewardType": "None",
+      "RewardAmount": null,
+      "MissionReward": {
+        "MissionRewardDefinitions": []
+      },
+      "IgnoreExceptionBranches": false,
+      "actions": [],
+      "branches": [],
+      "scriptableCondition": {
+        "$type": "KSP.Game.Missions.ConditionSet, Assembly-CSharp",
+        "ConditionType": "ConditionSet",
+        "ConditionMode": "AND",
+        "Children": [
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VesselSOIPropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 0.0,
+            "TestWatchedstring": "Kerbin",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "EQUAL",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VesselGroundLevelAltitudePropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 500.0,
+            "TestWatchedstring": "",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "LESSER",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VesselSurfaceSpeedPropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 400.0,
+            "TestWatchedstring": "",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "GREATER",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.HasPartInGroup, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 0.0,
+            "TestWatchedstring": "",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "EQUAL",
+            "isInput": true,
+            "Inputstring": "0120-Jet Engine"
+          }
+        ]
+      },
+      "completed": false,
+      "active": false
+    },
+    {
+      "StageID": 1,
+      "name": "Mission Complete",
+      "description": "",
+      "Objective": "",
+      "DisplayObjective": false,
+      "RevealObjectiveOnActivate": false,
+      "MissionRewardType": "None",
+      "RewardAmount": null,
+      "MissionReward": {
+        "MissionRewardDefinitions": [
+          {
+            "MissionRewardType": "SciencePoints",
+            "RewardAmount": 100.0,
+            "RewardKey": null
+          }
+        ]
+      },
+      "IgnoreExceptionBranches": true,
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionResolutionAction, Assembly-CSharp",
+          "MissionResolution": "Complete",
+          "summary_PrefabKey": null,
+          "waitForSummaryDismissed": false,
+          "StageEvent": "Play_mission_alert_primary"
+        }
+      ],
+      "branches": [],
+      "scriptableCondition": null,
+      "completed": false,
+      "active": false
+    }
+  ],
+  "currentStageIndex": 0,
+  "Hidden": false,
+  "MissionGranterKey": "MissionGranterC7",
+  "TriumphLoopVideoKey": "reward_mission_tier1",
+  "VisibleRewards": true,
+  "pendingCompletionTest": false,
+  "maxStageID": 2,
+  "uiDisplayType": "Default",
+  "ExceptionBranches": [],
+  "PreRequisiteBranches": [],
+  "ContentBranches": [
+    {
+      "ID": "Debrief",
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionCharacterDialogAction, Assembly-CSharp",
+          "CharacterNameLocKey": "Missions/CharacterName/Keri",
+          "CharacterIconKey": "keri_thinking",
+          "Dialogs": {
+            "Entries": [
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES15/Debrief01",
+                "ContentAddressableKey": "keri_thinking"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES15/Debrief02",
+                "ContentAddressableKey": "keri_thinking"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES15/Debrief03",
+                "ContentAddressableKey": "keri_thinking"
+              }
+            ]
+          },
+          "EventTypeOnClosed": "KSP.Messages.SpawnTriumphWindow, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "StageEvent": "Play_mission_alert_primary_returned_to_missionControl"
+        }
+      ]
+    },
+    {
+      "ID": "OnSubmit",
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.ActivateMissionAction, Assembly-CSharp",
+          "TargetMissionID": "MTE_Secondary_MTES16_Go_High",
+          "MissionOwner": "Agency",
+          "StageEvent": null
+        }
+      ]
+    }
+  ],
+  "MissionSaveAssetKey": ""
+}

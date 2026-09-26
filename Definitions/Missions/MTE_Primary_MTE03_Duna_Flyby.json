@@ -1,0 +1,219 @@
+{
+  "ID": "MTE_Primary_MTE03_Duna_Flyby",
+  "MissionGroup": "",
+  "name": "Missions/Primary/MTE03/Name",
+  "description": "Missions/Primary/MTE03/Description",
+  "GameModeFeatureId": "ExplorationMissions",
+  "type": "Primary",
+  "Owner": "Agency",
+  "state": "Inactive",
+  "missionScript": "",
+  "missionStages": [
+    {
+      "StageID": 0,
+      "name": "Check",
+      "description": "",
+      "Objective": "Missions/Primary/MTE03/Objective",
+      "DisplayObjective": true,
+      "RevealObjectiveOnActivate": false,
+      "MissionRewardType": "None",
+      "RewardAmount": null,
+      "MissionReward": {
+        "MissionRewardDefinitions": []
+      },
+      "IgnoreExceptionBranches": false,
+      "actions": [],
+      "branches": [],
+      "scriptableCondition": {
+        "$type": "KSP.Game.Missions.ConditionSet, Assembly-CSharp",
+        "ConditionType": "ConditionSet",
+        "ConditionMode": "AND",
+        "Children": [
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VesselSOIPropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 0.0,
+            "TestWatchedstring": "Duna",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "EQUAL",
+            "isInput": false,
+            "Inputstring": ""
+          }
+        ]
+      },
+      "completed": false,
+      "active": false
+    },
+    {
+      "StageID": 1,
+      "name": "Mission Complete",
+      "description": "",
+      "Objective": "",
+      "DisplayObjective": false,
+      "RevealObjectiveOnActivate": false,
+      "MissionRewardType": "None",
+      "RewardAmount": null,
+      "MissionReward": {
+        "MissionRewardDefinitions": [
+          {
+            "MissionRewardType": "SciencePoints",
+            "RewardAmount": 1200.0,
+            "RewardKey": null
+          }
+        ]
+      },
+      "IgnoreExceptionBranches": true,
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionResolutionAction, Assembly-CSharp",
+          "MissionResolution": "Complete",
+          "summary_PrefabKey": null,
+          "waitForSummaryDismissed": false,
+          "StageEvent": "Play_mission_alert_primary"
+        }
+      ],
+      "branches": [],
+      "scriptableCondition": null,
+      "completed": false,
+      "active": false
+    }
+  ],
+  "currentStageIndex": 0,
+  "Hidden": false,
+  "MissionGranterKey": "MissionGranterKSC",
+  "TriumphLoopVideoKey": "reward_mission_tier2",
+  "VisibleRewards": true,
+  "pendingCompletionTest": false,
+  "maxStageID": 2,
+  "uiDisplayType": "Default",
+  "ExceptionBranches": [],
+  "PreRequisiteBranches": [],
+  "ContentBranches": [
+    {
+      "ID": "Brief",
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionCharacterDialogAction, Assembly-CSharp",
+          "CharacterNameLocKey": "Missions/CharacterName/Keri",
+          "CharacterIconKey": "keri_teaching",
+          "Dialogs": {
+            "Entries": [
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Brief01",
+                "ContentAddressableKey": "keri_teaching"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Brief02",
+                "ContentAddressableKey": "keri_teaching"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Brief03",
+                "ContentAddressableKey": "keri_teaching"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Brief04",
+                "ContentAddressableKey": "keri_teaching"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Brief05",
+                "ContentAddressableKey": "keri_teaching"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Brief06",
+                "ContentAddressableKey": "keri_teaching"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Brief07",
+                "ContentAddressableKey": "keri_teaching"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Brief08",
+                "ContentAddressableKey": "keri_teaching"
+              }
+            ]
+          },
+          "EventTypeOnClosed": null,
+          "StageEvent": null
+        }
+      ]
+    },
+    {
+      "ID": "Debrief",
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionCharacterDialogAction, Assembly-CSharp",
+          "CharacterNameLocKey": "Missions/CharacterName/Keri",
+          "CharacterIconKey": "keri_thinking",
+          "Dialogs": {
+            "Entries": [
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Debrief01",
+                "ContentAddressableKey": "keri_thinking"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Debrief02",
+                "ContentAddressableKey": "keri_thinking"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Debrief03",
+                "ContentAddressableKey": "keri_thinking"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Debrief04",
+                "ContentAddressableKey": "keri_thinking"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Primary/MTE03/Debrief05",
+                "ContentAddressableKey": "keri_thinking"
+              }
+            ]
+          },
+          "EventTypeOnClosed": "KSP.Messages.SpawnTriumphWindow, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "StageEvent": "Play_mission_alert_primary"
+        }
+      ]
+    },
+    {
+      "ID": "OnSubmit",
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.ActivateMissionAction, Assembly-CSharp",
+          "TargetMissionID": "MTE_Primary_MTE04_Duna_ComSat",
+          "MissionOwner": "Agency",
+          "StageEvent": null
+        }
+      ]
+    }
+  ],
+  "MissionSaveAssetKey": ""
+}

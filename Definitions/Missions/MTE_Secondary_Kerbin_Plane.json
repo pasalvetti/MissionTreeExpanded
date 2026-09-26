@@ -1,0 +1,177 @@
+{
+  "ID": "MTE_Secondary_Kerbin_Plane",
+  "MissionGroup": "",
+  "name": "Missions/Secondary/Kerbin_Plane/Name",
+  "description": "Missions/Secondary/Kerbin_Plane/Description",
+  "GameModeFeatureId": "ExplorationMissions",
+  "type": "Secondary",
+  "Owner": "Agency",
+  "state": "Inactive",
+  "missionScript": "",
+  "missionStages": [
+    {
+      "StageID": 0,
+      "name": "Check",
+      "description": "",
+      "Objective": "Missions/Secondary/Kerbin_Plane/Objective2",
+      "DisplayObjective": true,
+      "RevealObjectiveOnActivate": false,
+      "MissionRewardType": "None",
+      "RewardAmount": null,
+      "MissionReward": {
+        "MissionRewardDefinitions": []
+      },
+      "IgnoreExceptionBranches": false,
+      "actions": [],
+      "branches": [],
+      "scriptableCondition": {
+        "$type": "KSP.Game.Missions.ConditionSet, Assembly-CSharp",
+        "ConditionType": "ConditionSet",
+        "ConditionMode": "AND",
+        "Children": [
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VesselSOIPropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 0.0,
+            "TestWatchedstring": "Kerbin",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "EQUAL",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.MaxGroundAltitudeReached, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 500.0,
+            "TestWatchedstring": "",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "GREATER",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.HasPartInGroup, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 0.0,
+            "TestWatchedstring": "",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "EQUAL",
+            "isInput": true,
+            "Inputstring": "0120-Jet Engine"
+          },
+          {
+            "$type": "KSP.Game.Missions.EventCondition, Assembly-CSharp",
+            "ConditionType": "EventCondition",
+            "eventObserved": false,
+            "EventTypeAQN": "KSP.Messages.VesselLandedGroundAtRestMessage, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          }
+        ]
+      },
+      "completed": false,
+      "active": false
+    },
+    {
+      "StageID": 1,
+      "name": "Mission Complete",
+      "description": "",
+      "Objective": "",
+      "DisplayObjective": false,
+      "RevealObjectiveOnActivate": false,
+      "MissionRewardType": "None",
+      "RewardAmount": null,
+      "MissionReward": {
+        "MissionRewardDefinitions": [
+          {
+            "MissionRewardType": "SciencePoints",
+            "RewardAmount": 50.0,
+            "RewardKey": null
+          }
+        ]
+      },
+      "IgnoreExceptionBranches": true,
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionResolutionAction, Assembly-CSharp",
+          "MissionResolution": "Complete",
+          "summary_PrefabKey": null,
+          "waitForSummaryDismissed": false,
+          "StageEvent": "Play_mission_alert_primary"
+        }
+      ],
+      "branches": [],
+      "scriptableCondition": null,
+      "completed": false,
+      "active": false
+    }
+  ],
+  "currentStageIndex": 0,
+  "Hidden": false,
+  "MissionGranterKey": "MissionGranterC7",
+  "TriumphLoopVideoKey": "reward_mission_tier1",
+  "VisibleRewards": true,
+  "pendingCompletionTest": false,
+  "maxStageID": 2,
+  "uiDisplayType": "Default",
+  "ExceptionBranches": [],
+  "PreRequisiteBranches": [],
+  "ContentBranches": [
+    {
+      "ID": "Debrief",
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionCharacterDialogAction, Assembly-CSharp",
+          "CharacterNameLocKey": "Missions/CharacterName/Keri",
+          "CharacterIconKey": "keri_neutral",
+          "Dialogs": {
+            "Entries": [
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/Kerbin_Plane/Debrief01",
+                "ContentAddressableKey": "keri_neutral"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/Kerbin_Plane/Debrief02",
+                "ContentAddressableKey": "keri_neutral"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/Kerbin_Plane/Debrief03",
+                "ContentAddressableKey": "keri_neutral"
+              }
+            ]
+          },
+          "EventTypeOnClosed": "KSP.Messages.SpawnTriumphWindow, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "StageEvent": "Play_mission_alert_primary_returned_to_missionControl"
+        }
+      ]
+    },
+    {
+      "ID": "OnSubmit",
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.ActivateMissionAction, Assembly-CSharp",
+          "TargetMissionID": "MTE_Secondary_MTES15_Go_Fast",
+          "MissionOwner": "Agency",
+          "StageEvent": null
+        }
+      ]
+    }
+  ],
+  "MissionSaveAssetKey": ""
+}

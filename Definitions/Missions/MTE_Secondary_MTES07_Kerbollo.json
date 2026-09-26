@@ -1,0 +1,277 @@
+{
+  "ID": "MTE_Secondary_MTES07_Kerbollo",
+  "MissionGroup": "",
+  "name": "Missions/Secondary/MTES07/Name",
+  "description": "Missions/Secondary/MTES07/Description",
+  "GameModeFeatureId": "ExplorationMissions",
+  "type": "Secondary",
+  "Owner": "Agency",
+  "state": "Inactive",
+  "missionScript": "",
+  "missionStages": [
+    {
+      "StageID": 0,
+      "name": "Check",
+      "description": "",
+      "Objective": "Missions/Secondary/MTES07/Objective",
+      "DisplayObjective": true,
+      "RevealObjectiveOnActivate": false,
+      "MissionRewardType": "None",
+      "RewardAmount": null,
+      "MissionReward": {
+        "MissionRewardDefinitions": []
+      },
+      "IgnoreExceptionBranches": false,
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionDestinationPosition, Assembly-CSharp",
+          "celestialBodyName": "Mun",
+          "cb_Coords": {
+            "x": 34.93,
+            "y": -28.482,
+            "z": 2671.01
+          },
+          "StageEvent": null
+        }
+      ],
+      "branches": [],
+      "scriptableCondition": {
+        "$type": "KSP.Game.Missions.ConditionSet, Assembly-CSharp",
+        "ConditionType": "ConditionSet",
+        "ConditionMode": "AND",
+        "Children": [
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VesselSOIPropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 0.0,
+            "TestWatchedstring": "Mun",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "EQUAL",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.CrewCount, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 0.0,
+            "TestWatchedstring": "",
+            "TestWatchedInt": 3,
+            "TestWatchedBool": true,
+            "propOperator": "EQUAL",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VehicleLatitudePropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 34.88,
+            "TestWatchedstring": "",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "GREATER",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VehicleLatitudePropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": 34.98,
+            "TestWatchedstring": "",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "LESSER",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VehicleLongitudePropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": -28.52,
+            "TestWatchedstring": "",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "GREATER",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
+            "ConditionType": "PropertyCondition",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VehicleLongitudePropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "RequireCurrentValue": true,
+            "valueMet": false,
+            "TestWatchedValue": -28.42,
+            "TestWatchedstring": "",
+            "TestWatchedInt": 0,
+            "TestWatchedBool": true,
+            "propOperator": "LESSER",
+            "isInput": false,
+            "Inputstring": ""
+          },
+          {
+            "$type": "KSP.Game.Missions.EventCondition, Assembly-CSharp",
+            "ConditionType": "EventCondition",
+            "eventObserved": false,
+            "EventTypeAQN": "KSP.Messages.VesselLandedGroundAtRestMessage, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          }
+        ]
+      },
+      "completed": false,
+      "active": false
+    },
+    {
+      "StageID": 1,
+      "name": "Mission Complete",
+      "description": "",
+      "Objective": "",
+      "DisplayObjective": false,
+      "RevealObjectiveOnActivate": false,
+      "MissionRewardType": "None",
+      "RewardAmount": null,
+      "MissionReward": {
+        "MissionRewardDefinitions": [
+          {
+            "MissionRewardType": "SciencePoints",
+            "RewardAmount": 400.0,
+            "RewardKey": null
+          }
+        ]
+      },
+      "IgnoreExceptionBranches": true,
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionResolutionAction, Assembly-CSharp",
+          "MissionResolution": "Complete",
+          "summary_PrefabKey": null,
+          "waitForSummaryDismissed": false,
+          "StageEvent": "Play_mission_alert_secondary"
+        }
+      ],
+      "branches": [],
+      "scriptableCondition": null,
+      "completed": false,
+      "active": false
+    }
+  ],
+  "currentStageIndex": 0,
+  "Hidden": false,
+  "MissionGranterKey": "MissionGranterKSC",
+  "TriumphLoopVideoKey": "TriumphAnimation_PM05",
+  "VisibleRewards": true,
+  "pendingCompletionTest": false,
+  "maxStageID": 2,
+  "uiDisplayType": "Default",
+  "ExceptionBranches": [],
+  "PreRequisiteBranches": [],
+  "ContentBranches": [
+    {
+      "ID": "Brief",
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionCharacterDialogAction, Assembly-CSharp",
+          "CharacterNameLocKey": "Missions/CharacterName/Keri",
+          "CharacterIconKey": "keri_thinking",
+          "Dialogs": {
+            "Entries": [
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES07/Brief01",
+                "ContentAddressableKey": "keri_thinking"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES07/Brief02",
+                "ContentAddressableKey": "keri_thinking"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES07/Brief03",
+                "ContentAddressableKey": "keri_thinking"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES07/Brief04",
+                "ContentAddressableKey": "keri_thinking"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES07/Brief05",
+                "ContentAddressableKey": "keri_thinking"
+              }
+            ]
+          },
+          "EventTypeOnClosed": null,
+          "StageEvent": null
+        }
+      ]
+    },
+    {
+      "ID": "Debrief",
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.MissionCharacterDialogAction, Assembly-CSharp",
+          "CharacterNameLocKey": "Missions/CharacterName/Keri",
+          "CharacterIconKey": "keri_annoyed",
+          "Dialogs": {
+            "Entries": [
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES07/Debrief01",
+                "ContentAddressableKey": "keri_annoyed"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES07/Debrief02",
+                "ContentAddressableKey": "keri_annoyed"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES07/Debrief03",
+                "ContentAddressableKey": "keri_annoyed"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES07/Debrief04",
+                "ContentAddressableKey": "keri_annoyed"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES07/Debrief05",
+                "ContentAddressableKey": "keri_annoyed"
+              }
+            ]
+          },
+          "EventTypeOnClosed": "KSP.Messages.SpawnTriumphWindow, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "StageEvent": "Play_mission_alert_secondary"
+        }
+      ]
+    }
+  ],
+  "MissionSaveAssetKey": ""
+}
