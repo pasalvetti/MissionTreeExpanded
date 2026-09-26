@@ -1,0 +1,18 @@
+{
+  "spec": "2.0",
+  "mod_id": "MissionTreeExpanded",
+  "name": "Mission Tree Expanded",
+  "author": "Polo",
+  "description": "A mod for KSP2 Redux adding two dozen new missions.",
+  "source": "https://github.com/pasalvetti/MissionTreeExpanded",
+  "version": "0.2.0",
+  "version_check": "",
+  "addressable_script_label": "MissionTreeExpanded_patches",
+  "addressable_prefab_patch_label": "MissionTreeExpanded_prefab_patches",
+  "ksp2_version": {
+    "min": "*",
+    "max": "*"
+  },
+  "dependencies": [],
+  "conflicts": []
+}
