@@ -1,6 +1,58 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8456208445643818332
+--- !u!114 &-2214221311490928617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470dbf1cc5834ffc97c653aa1126938c, type: 3}
+  m_Name: CopyFolderDatum
+  m_EditorClassIdentifier: ksp2community.ksp2unitytools.editor::Ksp2UnityTools.Editor.Modding.Thunderkit.CopyFolderDatum
+  StagingPaths: []
+  sourcePath: Assets\MissionTreeExpanded/Copied
+  destinationPath: Deploy/MissionTreeExpanded
+--- !u!114 &-1816434280722365202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22bb7fd1d3b56a48bc52f8e407901d6, type: 3}
+  m_Name: MissionTreeExpanded - Deploy
+  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Datum.ManifestIdentity
+  StagingPaths: []
+  Author: Polo
+  Name: 
+  Description: A mod for KSP2 Redux adding two dozen new missions.
+  Version: 0.2.0
+  Dependencies: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e563561e08b6a3642a487177f5cfbb37, type: 3}
+  m_Name: Deploy to Zip File Manifest
+  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Manifest
+  Data:
+  - {fileID: -2214221311490928617}
+  - {fileID: 3550213757611885016}
+  - {fileID: 7677449013332140587}
+  - {fileID: 4815190448637706368}
+  identity: {fileID: -1816434280722365202}
+  QuickAccess: 0
+--- !u!114 &3550213757611885016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16,7 +68,7 @@ MonoBehaviour:
   - Deploy/MissionTreeExpanded
   possibleFolders:
   - Assets\MissionTreeExpanded
---- !u!114 &11400000
+--- !u!114 &4815190448637706368
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25,31 +77,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e563561e08b6a3642a487177f5cfbb37, type: 3}
-  m_Name: Deploy to Zip File Manifest
-  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Manifest
-  Data:
-  - {fileID: 193295497878665692}
-  - {fileID: -8456208445643818332}
-  - {fileID: 1164973540591589614}
-  identity: {fileID: 6100866417835247015}
-  QuickAccess: 0
---- !u!114 &193295497878665692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 470dbf1cc5834ffc97c653aa1126938c, type: 3}
-  m_Name: CopyFolderDatum
-  m_EditorClassIdentifier: ksp2community.ksp2unitytools.editor::Ksp2UnityTools.Editor.Modding.Thunderkit.CopyFolderDatum
-  StagingPaths: []
-  sourcePath: Assets\MissionTreeExpanded/Copied
-  destinationPath: Deploy/MissionTreeExpanded
---- !u!114 &1164973540591589614
+  m_Script: {fileID: 11500000, guid: 2b7e13dda513544419a89926bd12ad8a, type: 3}
+  m_Name: AssemblyDefinitions
+  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Datums.AssemblyDefinitions
+  StagingPaths:
+  - Deploy/MissionTreeExpanded
+  definitions:
+  - {fileID: 5897886265953266890, guid: a93c3af0257d43d4d8f282e87c52ba50, type: 3}
+--- !u!114 &7677449013332140587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,21 +100,3 @@ MonoBehaviour:
   - Deploy/MissionTreeExpanded/addressables
   mod: {fileID: 11400000, guid: 7c500aae99640ea4387cbd099b20b2a7, type: 2}
   targetFolder: Deploy/MissionTreeExpanded/addressables
---- !u!114 &6100866417835247015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f22bb7fd1d3b56a48bc52f8e407901d6, type: 3}
-  m_Name: MissionTreeExpanded - Deploy
-  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Datum.ManifestIdentity
-  StagingPaths: []
-  Author: nobody
-  Name: 
-  Description: A sample mod for KSP2
-  Version: 0.1.0
-  Dependencies: []

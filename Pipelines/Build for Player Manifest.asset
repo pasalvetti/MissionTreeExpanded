@@ -1,6 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7499008557383646700
+--- !u!114 &-8517248943511533641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470dbf1cc5834ffc97c653aa1126938c, type: 3}
+  m_Name: CopyFolderDatum
+  m_EditorClassIdentifier: ksp2community.ksp2unitytools.editor::Ksp2UnityTools.Editor.Modding.Thunderkit.CopyFolderDatum
+  StagingPaths: []
+  sourcePath: Assets\MissionTreeExpanded/Copied
+  destinationPath: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program 2/mods/__Testing/MissionTreeExpanded
+--- !u!114 &-8072201311598279424
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,30 +28,12 @@ MonoBehaviour:
   m_Name: MissionTreeExpanded - Editor
   m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Datum.ManifestIdentity
   StagingPaths: []
-  Author: nobody
+  Author: Polo
   Name: 
-  Description: A sample mod for KSP2
-  Version: 0.1.0
+  Description: A mod for KSP2 Redux adding two dozen new missions.
+  Version: 0.2.0
   Dependencies: []
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e563561e08b6a3642a487177f5cfbb37, type: 3}
-  m_Name: Build for Player Manifest
-  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Manifest
-  Data:
-  - {fileID: 2283474054017551550}
-  - {fileID: 7291575775924051474}
-  - {fileID: 228472906517037388}
-  identity: {fileID: -7499008557383646700}
-  QuickAccess: 0
---- !u!114 &228472906517037388
+--- !u!114 &-4176499699020319032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -52,7 +49,7 @@ MonoBehaviour:
   - C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program 2/mods/__Testing/MissionTreeExpanded/addressables
   mod: {fileID: 11400000, guid: 7c500aae99640ea4387cbd099b20b2a7, type: 2}
   targetFolder: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program 2/mods/__Testing/MissionTreeExpanded/addressables
---- !u!114 &2283474054017551550
+--- !u!114 &-2444508810031118939
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,13 +58,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 470dbf1cc5834ffc97c653aa1126938c, type: 3}
-  m_Name: CopyFolderDatum
-  m_EditorClassIdentifier: ksp2community.ksp2unitytools.editor::Ksp2UnityTools.Editor.Modding.Thunderkit.CopyFolderDatum
-  StagingPaths: []
-  sourcePath: Assets\MissionTreeExpanded/Copied
-  destinationPath: C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program 2/mods/__Testing/MissionTreeExpanded
---- !u!114 &7291575775924051474
+  m_Script: {fileID: 11500000, guid: 2b7e13dda513544419a89926bd12ad8a, type: 3}
+  m_Name: AssemblyDefinitions
+  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Datums.AssemblyDefinitions
+  StagingPaths:
+  - C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program 2/mods/__Testing/MissionTreeExpanded
+  definitions:
+  - {fileID: 5897886265953266890, guid: a93c3af0257d43d4d8f282e87c52ba50, type: 3}
+--- !u!114 &-1967118355264836666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,3 +81,22 @@ MonoBehaviour:
   - C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program 2/mods/__Testing/MissionTreeExpanded
   possibleFolders:
   - Assets\MissionTreeExpanded
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e563561e08b6a3642a487177f5cfbb37, type: 3}
+  m_Name: Build for Player Manifest
+  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Manifest
+  Data:
+  - {fileID: -8517248943511533641}
+  - {fileID: -1967118355264836666}
+  - {fileID: -4176499699020319032}
+  - {fileID: -2444508810031118939}
+  identity: {fileID: -8072201311598279424}
+  QuickAccess: 0

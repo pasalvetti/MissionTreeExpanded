@@ -1,40 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2969126482246628225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a089732392b94873b7dffb12543079c3, type: 3}
-  m_Name: TextAssets
-  m_EditorClassIdentifier: ksp2community.ksp2unitytools.editor::Ksp2UnityTools.Editor.Modding.Thunderkit.TextAssets
-  StagingPaths:
-  - Assets/Mods/__Testing/MissionTreeExpanded
-  possibleFolders:
-  - Assets\MissionTreeExpanded
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e563561e08b6a3642a487177f5cfbb37, type: 3}
-  m_Name: Build for Editor Manifest
-  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Manifest
-  Data:
-  - {fileID: 5815709583491264723}
-  - {fileID: -2969126482246628225}
-  - {fileID: 6627588391801132677}
-  identity: {fileID: 8979885678049001414}
-  QuickAccess: 0
---- !u!114 &5815709583491264723
+--- !u!114 &-6403213785514158441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,7 +15,7 @@ MonoBehaviour:
   StagingPaths: []
   sourcePath: Assets\MissionTreeExpanded/Copied
   destinationPath: Assets/Mods/__Testing/MissionTreeExpanded
---- !u!114 &6627588391801132677
+--- !u!114 &-6207549717718304831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,7 +31,58 @@ MonoBehaviour:
   - Assets/Mods/__Testing/MissionTreeExpanded/addressables
   mod: {fileID: 11400000, guid: 7c500aae99640ea4387cbd099b20b2a7, type: 2}
   targetFolder: Assets/Mods/__Testing/MissionTreeExpanded/addressables
---- !u!114 &8979885678049001414
+--- !u!114 &-248585495372278697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7e13dda513544419a89926bd12ad8a, type: 3}
+  m_Name: AssemblyDefinitions
+  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Datums.AssemblyDefinitions
+  StagingPaths:
+  - Assets/Mods/__Testing/MissionTreeExpanded
+  definitions:
+  - {fileID: 5897886265953266890, guid: a93c3af0257d43d4d8f282e87c52ba50, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e563561e08b6a3642a487177f5cfbb37, type: 3}
+  m_Name: Build for Editor Manifest
+  m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Manifest
+  Data:
+  - {fileID: -6403213785514158441}
+  - {fileID: 7508021682205484547}
+  - {fileID: -6207549717718304831}
+  - {fileID: -248585495372278697}
+  identity: {fileID: 8732505600462723435}
+  QuickAccess: 0
+--- !u!114 &7508021682205484547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a089732392b94873b7dffb12543079c3, type: 3}
+  m_Name: TextAssets
+  m_EditorClassIdentifier: ksp2community.ksp2unitytools.editor::Ksp2UnityTools.Editor.Modding.Thunderkit.TextAssets
+  StagingPaths:
+  - Assets/Mods/__Testing/MissionTreeExpanded
+  possibleFolders:
+  - Assets\MissionTreeExpanded
+--- !u!114 &8732505600462723435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,8 +95,8 @@ MonoBehaviour:
   m_Name: MissionTreeExpanded - Editor
   m_EditorClassIdentifier: ThunderKit.Core::ThunderKit.Core.Manifests.Datum.ManifestIdentity
   StagingPaths: []
-  Author: nobody
+  Author: Polo
   Name: 
-  Description: A sample mod for KSP2
-  Version: 0.1.0
+  Description: A mod for KSP2 Redux adding two dozen new missions.
+  Version: 0.2.0
   Dependencies: []
