@@ -20,6 +20,13 @@ local function RetargetActivation(branch, from, to)
     end
 end
 
+PM.Missions:Patch("DressRehearsalAvailableAtStart")
+           :Named("KSP2Mission_Secondary_Kerbin_EVAGround")
+           :Do(function(mission)
+               -- Available as soon as a campaign starts.
+               mission.state = "Active"
+           end)
+
 PM.Missions:Patch("Kerbin02Activations")
            :Named("KSP2Mission_Main_Kerbin_02")
            :Do(function(mission)
