@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9065a46703c44e8fabd263388eaeb6e7, type: 3}
+  m_Name: Mission Tree Expanded
+  m_EditorClassIdentifier: ksp2community.ksp2unitytools.editor::Ksp2UnityTools.Editor.Modding.Mod
+  id: MissionTreeExpanded
+  name: Mission Tree Expanded
+  author: Polo
+  description: A mod for KSP2 Redux adding two dozen new missions.
+  version: 0.2.0
+  versionCheck: 
+  minKsp2Version: '*'
+  maxKsp2Version: '*'
+  source: https://github.com/pasalvetti/MissionTreeExpanded
+  allGroup: {fileID: 11400000, guid: 3dc5500fd60a86b44a487ad7f8426654, type: 2}
+  partsGroup: {fileID: 11400000, guid: d0243bbbc3693d64a8f94c960fc2bf27, type: 2}
+  missionsGroup: {fileID: 11400000, guid: 51ca77fcaf7eee14e8d883a5fc4accb1, type: 2}
+  celestialBodiesGroup: {fileID: 11400000, guid: b553626d4c6254b4a9d21d33c8f52f32, type: 2}
+  scienceExperimentGroup: {fileID: 11400000, guid: d1828148935477040aad4dff1c59903c, type: 2}
+  techNodeDataGroup: {fileID: 11400000, guid: 0d8ed1aeafcf1b34cb8a99bc287a76d0, type: 2}
+  resourcesGroup: {fileID: 11400000, guid: 3293cf96a5d91364f9dcf7039a393708, type: 2}
+  addressablesProfileId: 0422266e8fc1cfc4fb23913f9ab1cd02
+  dependencies: []
+  incompatibilities: []
