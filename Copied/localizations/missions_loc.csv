@@ -114,7 +114,7 @@ Missions/Secondary/MTES01/Debrief04,Text,,"Come back in a few while I set up a n
 
 Missions/Secondary/MTES02/Name,Text,,"Polar Reconnaissance"
 Missions/Secondary/MTES02/Description,Text,,"We need to take a closer look at this icy North Pole."
-Missions/Secondary/MTES02/Objective,Text,,"Land an unmanned probe on Kerbin’s North Pole."
+Missions/Secondary/MTES02/Objective,Text,,"Land an unmanned probe on Kerbin’s north polar ice cap, above 80° N latitude."
 
 Missions/Secondary/MTES02/Brief01,Text,,"Good, you’re here. Excellent work on the polar orbit! However, merely <i>seeing</i> the ice is not enough. We need to know more. Is it stable? Is it safe? Is it… <i>solid</i> enough for Kerbal boots?"
 Missions/Secondary/MTES02/Brief02,Text,,"That's why I've devised our next mission: a polar landing! But not with Kerbals just yet. We're sending a probe first. We need to be absolutely certain it's safe before we risk any of our brave explorers."
