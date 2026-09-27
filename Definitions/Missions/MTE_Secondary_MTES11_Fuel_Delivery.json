@@ -200,7 +200,7 @@
   "currentStageIndex": 0,
   "Hidden": false,
   "MissionGranterKey": "MissionGranterKSC",
-  "TriumphLoopVideoKey": "reward_mission_tier",
+  "TriumphLoopVideoKey": "reward_mission_tier1",
   "VisibleRewards": true,
   "pendingCompletionTest": false,
   "maxStageID": 2,
