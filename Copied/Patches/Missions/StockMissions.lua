@@ -114,6 +114,8 @@ PM.Missions:Patch("Minmus01Activations")
            :Named("KSP2Mission_Main_Minmus_01")
            :Do(function(mission)
                local onSubmit = mission.ContentBranches.OnSubmit
+               -- Duna Monument now spawns from Celestial Dialogue
+               RemoveActivation(onSubmit, "Main_Duna_01")
                -- Picnic at Teetering Rock
                AddActivation(onSubmit, "MTE_Secondary_MTES09_Picnic_Teetering_Rock")
                -- The Outpost
