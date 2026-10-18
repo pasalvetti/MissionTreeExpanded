@@ -32,44 +32,44 @@
           {
             "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
             "ConditionType": "PropertyCondition",
-            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.HasBeenToResearchLocation, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VesselHasLandedOnCBPropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
             "RequireCurrentValue": true,
             "valueMet": false,
             "TestWatchedValue": 0.0,
-            "TestWatchedstring": "Mun_Landed",
+            "TestWatchedstring": "",
             "TestWatchedInt": 0,
             "TestWatchedBool": true,
             "propOperator": "EQUAL",
-            "isInput": false,
-            "Inputstring": ""
+            "isInput": true,
+            "Inputstring": "Kerbin"
           },
           {
             "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
             "ConditionType": "PropertyCondition",
-            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.HasBeenToResearchLocation, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VesselHasLandedOnCBPropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
             "RequireCurrentValue": true,
             "valueMet": false,
             "TestWatchedValue": 0.0,
-            "TestWatchedstring": "Minmus_Landed",
+            "TestWatchedstring": "",
             "TestWatchedInt": 0,
             "TestWatchedBool": true,
             "propOperator": "EQUAL",
-            "isInput": false,
-            "Inputstring": ""
+            "isInput": true,
+            "Inputstring": "Mun"
           },
           {
             "$type": "KSP.Game.Missions.PropertyCondition, Assembly-CSharp",
             "ConditionType": "PropertyCondition",
-            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.HasBeenToResearchLocation, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertyTypeAQN": "KSP.Messages.PropertyWatchers.VesselHasLandedOnCBPropertyWatcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
             "RequireCurrentValue": true,
             "valueMet": false,
             "TestWatchedValue": 0.0,
-            "TestWatchedstring": "Kerbin_Landed",
+            "TestWatchedstring": "",
             "TestWatchedInt": 0,
             "TestWatchedBool": true,
             "propOperator": "EQUAL",
-            "isInput": false,
-            "Inputstring": ""
+            "isInput": true,
+            "Inputstring": "Minmus"
           }
         ]
       },
@@ -101,7 +101,7 @@
           "MissionResolution": "Complete",
           "summary_PrefabKey": null,
           "waitForSummaryDismissed": false,
-          "StageEvent": "Play_mission_alert_primary"
+          "StageEvent": "Play_mission_alert_secondary"
         }
       ],
       "branches": [],
