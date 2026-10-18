@@ -89,13 +89,6 @@ PM.Missions:Patch("Mun01Activations")
                AddActivation(mission.ContentBranches.OnSubmit, "MTE_Secondary_MTES05_ComSat_Mun")
            end)
 
-PM.Missions:Patch("KerbinRoverActivations")
-           :Named("KSP2Mission_Secondary_Kerbin_Rover")
-           :Do(function(mission)
-               -- Strong Is The Far Side
-               AddActivation(mission.ContentBranches.OnSubmit, "MTE_Secondary_MTES12_Far_Side")
-           end)
-
 PM.Missions:Patch("MinmusBadSignalActivations")
            :Named("KSP2Mission_Main_Minmus_BadSignal")
            :Do(function(mission)
@@ -118,17 +111,6 @@ PM.Missions:Patch("Minmus01Activations")
                RemoveActivation(onSubmit, "Main_Duna_01")
                -- Picnic at Teetering Rock
                AddActivation(onSubmit, "MTE_Secondary_MTES09_Picnic_Teetering_Rock")
-               -- The Outpost
-               AddActivation(onSubmit, "MTE_Secondary_MTES10_Gound_Station_Monument")
                -- Celestial Dialogue
                AddActivation(onSubmit, "MTE_Primary_MTE02_Munar_Gateway")
-           end)
-
-PM.Missions:Patch("KerbinTourSOIActivations")
-           :Named("KSP2Mission_Secondary_Kerbin_KerbinTourSOI")
-           :Do(function(mission)
-               -- Redux's Sightseeing activates its own Landing Party, which Redux does not ship.
-               -- Point it at the MTE one instead.
-               RetargetActivation(mission.ContentBranches.OnSubmit,
-                   "KSP2Mission_Secondary_Kerbin_KerbinTourLanding", "MTE_Secondary_Kerbin_KerbinTourLanding")
            end)
