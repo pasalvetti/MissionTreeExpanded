@@ -217,7 +217,14 @@
     },
     {
       "ID": "OnSubmit",
-      "actions": []
+      "actions": [
+        {
+          "$type": "KSP.Game.Missions.ActivateMissionAction, Assembly-CSharp",
+          "TargetMissionID": "MTE_Secondary_MTES06_Polar_Rover",
+          "MissionOwner": "Agency",
+          "StageEvent": null
+        }
+      ]
     }
   ],
   "MissionSaveAssetKey": ""
