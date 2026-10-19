@@ -241,6 +241,12 @@
                 "DialogEntryType": "Text",
                 "LocKey": "Missions/Secondary/MTES06/Debrief03",
                 "ContentAddressableKey": "keri_happy"
+              },
+              {
+                "ShowsInHistory": true,
+                "DialogEntryType": "Text",
+                "LocKey": "Missions/Secondary/MTES06/Debrief04",
+                "ContentAddressableKey": "keri_happy"
               }
             ]
           },
