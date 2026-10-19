@@ -211,6 +211,12 @@
           "TargetMissionID": "MTE_Primary_MTE04_Duna_ComSat",
           "MissionOwner": "Agency",
           "StageEvent": null
+        },
+        {
+          "$type": "KSP.Game.Missions.ActivateMissionAction, Assembly-CSharp",
+          "TargetMissionID": "Main_Duna_01",
+          "MissionOwner": "Agency",
+          "StageEvent": null
         }
       ]
     }
